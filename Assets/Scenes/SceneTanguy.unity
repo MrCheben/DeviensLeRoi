@@ -254,6 +254,7 @@ MonoBehaviour:
   nbPlayed: 000000000000000000000000000000000000000000000000
   transitionListPlayer: []
   ListPlayerGame: []
+  NbJ: 0
 --- !u!4 &1464996860
 Transform:
   m_ObjectHideFlags: 0
