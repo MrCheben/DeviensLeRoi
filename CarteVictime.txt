@@ -1,0 +1,81 @@
+Exemple : J1 trouve J2 enterré la tete dans le sol, J1 tente de lui mettre un coup de pied dans la tête ou l'aider
+
+J1 découvre J2, piégé sous des décombres lors d'un effondrement de structure. J1 peut choisir d'essayer de libérer J2 en lui apportant de l'aide ou de l'abandonner.
+
+J1 et J2 se retrouvent coincés dans un puits profond. J1 peut décider de chercher de l'aide pour sortir J2 de là ou de tenter de le faire remonter lui-même.
+
+J1 assiste à une attaque où J2 est pris au piège sous un cheval renversé. J1 doit choisir entre aider J2 à se libérer ou sauver sa propre vie.
+
+J1 et J2 se retrouvent dans un marécage où J2 est en train de s'enfoncer. J1 peut tenter de trouver une branche ou une corde pour l'aider à se sortir de là, ou bien l'abandonner à son sort.
+
+J1 découvre que J2 est pris au piège dans une geôle médiévale. J1 peut décider de risquer sa propre liberté pour aider J2 à s'évader ou l'abandonner à son destin.
+
+J1 voit J2 se faire attaquer par des brigands et être désarmé. J1 peut choisir d'intervenir pour protéger J2 ou de se retirer pour sa propre sécurité.
+
+J1 et J2 se retrouvent dans une forêt infestée de prédateurs. J1 peut opter pour aider J2 à se défendre contre les bêtes sauvages ou s'enfuir pour sauver sa propre vie.
+
+J1 découvre que J2 est en train de se noyer dans une rivière tumultueuse. J1 doit choisir entre plonger pour le sauver ou chercher de l'aide.
+
+J1 assiste à un duel où J2 est en train de perdre. J1 peut intervenir pour aider J2 à se défendre ou rester en retrait pour éviter tout conflit.
+
+J1 trouve J2 gravement blessé sur un champ de bataille. J1 doit décider de consacrer du temps et des ressources pour soigner J2 ou de continuer son chemin.
+
+J1 et J2 se retrouvent piégés dans un donjon en ruine. J1 doit décider s'il veut chercher une issue pour les deux ou s'échapper seul.
+
+J1 découvre que J2 est empoisonné. J1 peut choisir de trouver un antidote rapidement ou abandonner J2 à son sort.
+
+J1 et J2 sont en route vers une ville assiégée. J1 doit décider s'il veut partager ses provisions avec J2 ou les conserver pour lui-même.
+
+J1 et J2 sont tous deux suspects d'une accusation injuste. J1 peut dire la vérité et risquer sa propre sécurité pour sauver J2 ou rester silencieux pour éviter des ennuis.
+
+J1 et J2 sont tous deux en compétition pour gagner les faveurs du seigneur local. J1 doit décider s'il veut trahir J2 pour obtenir une faveur ou rester loyal.
+
+J1 trouve J2 pris au piège dans une fosse à serpents. J1 doit décider de risquer sa vie pour le sauver ou de continuer son chemin.
+
+J1 et J2 sont impliqués dans une querelle publique. J1 peut choisir de résoudre le différend pacifiquement ou de recourir à la violence.
+
+J1 et J2 sont témoins d'une injustice où J2 est accusé à tort. J1 doit décider s'il veut intervenir pour prouver l'innocence de J2 ou rester neutre.
+
+J1 et J2 se trouvent confrontés à un dilemme où un seul peut survivre. Ils doivent décider qui entre eux obtiendra les ressources nécessaires.
+
+J1 découvre que J2 est sous l'emprise d'une malédiction. J1 peut décider de chercher un moyen de lever la malédiction ou de s'éloigner pour éviter les conséquences.
+
+J1 et J2 découvrent un trésor ensemble. J1 doit décider s'il veut partager le trésor de manière équitable ou s'en emparer pour lui-même.
+
+J1 se retrouve face à une décision où il peut soit trahir J2 pour obtenir une récompense, soit rester loyal malgré les risques.
+
+J1 et J2 sont pris dans une tempête de neige. J1 doit choisir entre chercher un abri pour les deux ou abandonner J2 pour sauver sa propre vie.
+
+J1 et J2 doivent traverser un pont fragile. J1 doit décider s'il veut risquer de le traverser ensemble ou le traverser seul, mettant J2 en danger.
+
+J1 découvre que J2 est accusé de sorcellerie. J1 doit décider s'il veut l'aider à prouver son innocence ou l'abandonner pour éviter d'être associé à la sorcellerie.
+
+J1 et J2 sont coincés dans une grotte effondrée. J1 doit décider s'il veut chercher une sortie pour les deux ou chercher de l'aide.
+
+J1 et J2 sont témoins d'une trahison où l'un d'eux est impliqué. J1 doit choisir s'il veut révéler la trahison ou garder le secret.
+
+J1 et J2 trouvent un animal blessé. J1 doit décider s'il veut s'arrêter pour le soigner ou poursuivre leur chemin sans s'en préoccuper.
+
+J1 et J2 se trouvent dans une situation où un sacrifice est nécessaire pour sauver l'autre. Ils doivent décider qui se sacrifiera.
+
+J1 découvre que J2 est accusé à tort de vol. J1 doit décider s'il veut chercher des preuves pour l'innocenter ou ignorer la situation.
+
+J1 et J2 sont pris au piège dans une embuscade. J1 doit choisir entre se battre pour les deux ou s'échapper pour chercher de l'aide.
+
+J1 et J2 doivent traverser un territoire dangereux. J1 doit décider s'il veut protéger J2 à tout prix ou se concentrer sur sa propre survie.
+
+J1 découvre que J2 est sous l'emprise d'un sortilège d'oubli. J1 doit choisir entre l'aider à retrouver sa mémoire ou poursuivre sa route sans lui.
+
+J1 et J2 se retrouvent tous deux pris en otage. J1 doit décider s'il veut tenter une évasion risquée pour les deux ou obéir aux ravisseurs.
+
+J1 découvre que J2 est en train d'être injustement condamné à mort. J1 doit choisir entre trouver un moyen de le sauver ou s'en éloigner pour éviter des ennuis.
+
+J1 et J2 sont impliqués dans un conflit où J2 est du mauvais côté. J1 doit décider s'il veut tenter de raisonner J2 ou se ranger du côté opposé.
+
+J1 découvre que J2 est sous l'emprise d'une maladie contagieuse. J1 doit choisir entre l'aider à trouver un remède ou s'éloigner pour se protéger.
+
+J1 et J2 sont confrontés à une épreuve où un seul peut obtenir un passage sûr. Ils doivent décider qui entre eux passera.
+
+J1 et J2 trouvent une relique sacrée. J1 doit décider s'il veut la partager avec J2 ou s'en emparer pour lui-même.
+
+J1 découvre que J2 est confronté à un danger imminent. J1 doit choisir entre risquer sa vie pour le sauver ou s'enfuir pour se protéger.

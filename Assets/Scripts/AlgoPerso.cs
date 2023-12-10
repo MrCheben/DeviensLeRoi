@@ -25,14 +25,13 @@ public class AlgoPerso : MonoBehaviour
             ListPlayerGame.Clear();
             NbJ = Random.Range(1,5);
             addToCurrentList(0);
-            
+            Debug.Log("Jeu a " + NbJ + " Joueurs");            
         }
     }
 
 
     public void addToCurrentList(int scoreP)
-    {
-        Debug.Log("Jeu a " + NbJ + " Joueurs");
+    {        
         //Ajout a la liste de transtion
         var index = 0;
         foreach (var item in nbPlayed)
@@ -75,7 +74,7 @@ public class AlgoPerso : MonoBehaviour
 
             // if pas assez de joueur on va chercher les autres jouurs qui sont deja 1 
             addToCurrentList(1);
-            //On Shuffle quand même l'array
+            //On Shuffle quand mï¿½me l'array
             transitionListPlayer = shuffleGOList(transitionListPlayer);
             for (int i = 0; i < nbPlayer - ListPlayerGame.Count; i++)
             {
@@ -83,7 +82,7 @@ public class AlgoPerso : MonoBehaviour
                 nbPlayed[listPlayer.FindIndex(a => a.Contains(transitionListPlayer[i].ToString()))] = 1;
             }
             transitionListPlayer.Clear();
-            //ResetScoreP();
+            ResetScoreP();
 
         }
 

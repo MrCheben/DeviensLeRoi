@@ -1,0 +1,81 @@
+Exemple : J1 tu te bats contre J2 dans une maison abandonné , il y a un levier l'actionne tu ?
+
+J1 et J2 découvrent un coffre fermé dans une vieille taverne abandonnée. J1 doit décider s'il tente de l'ouvrir, prenant le risque de déclencher un piège ou de libérer quelque chose de précieux.
+
+J1 et J2 trouvent une vieille relique mystérieuse dans un sanctuaire déserté. J1 doit décider s'il prend cette relique, malgré le risque de déclencher une malédiction ou d'attirer des ennuis.
+
+J1 et J2 découvrent une porte secrète dans un château abandonné. J1 doit décider s'il l'ouvre, risquant de libérer quelque chose de dangereux ou de découvrir un trésor caché.
+
+J1 et J2 trouvent une épée ancienne plantée dans le sol. J1 doit décider s'il la retire, même si cela pourrait libérer un esprit ou déclencher une malédiction.
+
+J1 et J2 tombent sur un manuscrit codé dans une bibliothèque abandonnée. J1 doit décider s'il tente de le déchiffrer, prenant le risque de libérer un savoir interdit ou de trouver une connaissance précieuse.
+
+J1 et J2 découvrent une porte scellée dans une catacombe. J1 doit décider s'il tente de l'ouvrir, sans savoir ce qui se cache derrière : trésor, danger ou secret interdit.
+
+J1 et J2 rencontrent un objet étrange dans une clairière isolée. J1 doit décider s'il interagit avec cet objet, prenant le risque de déclencher un événement surnaturel ou de découvrir un pouvoir magique.
+
+J1 et J2 trouvent un mystérieux artefact dans un ancien temple. J1 doit décider s'il l'examine, risquant de libérer un esprit vengeur ou de gagner une connaissance précieuse.
+
+J1 et J2 découvrent un passage secret dans un vieux manoir. J1 doit décider s'il l'emprunte, sans savoir ce qui l'attend de l'autre côté : danger, trésor ou un piège mortel.
+
+J1 et J2 trouvent un cristal étrange caché dans une grotte. J1 doit décider s'il le touche, prenant le risque de déclencher une réaction magique ou de découvrir un pouvoir étonnant.
+
+J1 et J2 découvrent un étrange artefact dans une crypte, avec une inscription en une langue inconnue. J1 doit décider s'il veut le prendre, risquant de déclencher une malédiction ou de découvrir un pouvoir antique.
+
+J1 et J2 trouvent un animal blessé dans une forêt dense. J1 doit décider s'il veut le soigner, prenant le risque d'attirer des prédateurs ou de gagner un allié.
+
+J1 et J2 tombent sur un objet brillant au fond d'un puits. J1 doit décider s'il le récupère, risquant de provoquer un effondrement ou de trouver un trésor oublié.
+
+J1 et J2 découvrent une grotte aux stalactites menaçantes. J1 doit décider s'ils s'y aventurent, risquant d'activer un piège ou de trouver un refuge sûr.
+
+J1 et J2 trouvent une carte au trésor détaillée dans une vieille auberge. J1 doit décider s'il la suit, prenant le risque de tomber dans un piège ou de découvrir un trésor enfoui.
+
+J1 et J2 découvrent une étrange plante rare lors de leur expédition. J1 doit décider s'il la cueille, risquant d'activer une réaction toxique ou de découvrir une potion précieuse.
+
+J1 et J2 trouvent une source d'eau dans une contrée aride. J1 doit décider s'ils en boivent, risquant une maladie ou se désaltérer pour poursuivre leur route.
+
+J1 et J2 découvrent un manuscrit ancien dans une tour isolée. J1 doit décider s'il le lit, risquant d'attirer une entité surnaturelle ou de gagner une connaissance rare.
+
+J1 et J2 trouvent un passage souterrain dissimulé sous un pont. J1 doit décider s'ils l'empruntent, risquant d'être piégés ou de trouver un raccourci sûr.
+
+J1 et J2 découvrent une énigmatique pierre de divination. J1 doit décider s'il l'utilise, risquant de déclencher une prophétie sinistre ou de recevoir des réponses précieuses.
+
+J1 et J2 tombent sur une relique mystérieuse dans une ruine. J1 doit décider s'ils l'examinent, risquant de réveiller une entité ou de découvrir un pouvoir oublié.
+
+J1 et J2 découvrent une créature légendaire endormie. J1 doit décider s'ils l'éveillent, risquant une attaque ou de gagner un allié puissant.
+
+J1 et J2 trouvent un ancien grimoire dans une bibliothèque secrète. J1 doit décider s'ils le consultent, risquant de déclencher une malédiction ou de gagner un pouvoir magique.
+
+J1 et J2 découvrent un mystérieux collier en perles dans une antre. J1 doit décider s'il le touche, risquant de subir un sort ou de recevoir une protection.
+
+J1 et J2 rencontrent un vieux sage qui propose une énigme en échange de connaissances. J1 doit décider s'il répond, risquant de perdre ou de gagner des informations précieuses.
+
+J1 et J2 découvrent un miroir ancien dans une pièce abandonnée. J1 doit décider s'ils l'utilisent, risquant d'être piégés ou de découvrir des vérités cachées.
+
+J1 et J2 trouvent une carte des étoiles ancienne dans une tour astronomique. J1 doit décider s'ils la suivent, risquant de se perdre ou de trouver un trésor céleste.
+
+J1 et J2 découvrent un chaudron mystérieux dans une cabane isolée. J1 doit décider s'ils y préparent une potion, risquant un effet indésirable ou de créer un remède puissant.
+
+J1 et J2 tombent sur une porte magique verrouillée dans une cité abandonnée. J1 doit décider s'ils tentent de l'ouvrir, risquant de déclencher une catastrophe ou de découvrir un refuge sûr.
+
+J1 et J2 découvrent un passage secret dans un vieux cimetière. J1 doit décider s'ils l'empruntent, risquant de provoquer un effondrement ou de trouver un sanctuaire caché.
+
+J1 et J2 trouvent un étrange coffret scellé avec des symboles inconnus. J1 doit décider s'ils l'ouvrent, risquant de déclencher une malédiction ou de trouver un trésor caché.
+
+J1 et J2 découvrent une arme antique gravée dans une stèle. J1 doit décider s'ils la prennent, risquant d'éveiller un esprit ou de recevoir une protection.
+
+J1 et J2 tombent sur une fontaine magique dans une clairière enchantée. J1 doit décider s'ils boivent de son eau, risquant un charme ou de recevoir une bénédiction.
+
+J1 et J2 découvrent une amulette mystique au fond d'une grotte. J1 doit décider s'ils la touchent, risquant de subir une malédiction ou de recevoir une protection.
+
+J1 et J2 trouvent un livre ancien avec un sortilège puissant. J1 doit décider s'ils l'utilisent, risquant de provoquer un désastre ou de gagner un pouvoir magique.
+
+J1 et J2 découvrent une piste menant à une relique dans un tombeau caché. J1 doit décider s'ils la suivent, risquant un piège ou de trouver un trésor oublié.
+
+J1 et J2 tombent sur un artefact étrange dans une grotte gelée. J1 doit décider s'ils l'approchent, risquant de déclencher une tempête ou de trouver un moyen de se réchauffer.
+
+J1 et J2 découvrent une épée ensorcelée dans un sanctuaire isolé. J1 doit décider s'ils la prennent, risquant de déchaîner une malédiction ou de recevoir une protection.
+
+J1 et J2 rencontrent une créature énigmatique offrant une énigme en échange d'une faveur. J1 doit décider s'ils acceptent, risquant de perdre ou de gagner une connaissance précieuse.
+
+J1 et J2 trouvent une carte détaillée d'un labyrinthe ancien. J1 doit décider s'ils l'empruntent, risquant de se perdre ou de trouver un trésor caché.
