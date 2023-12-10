@@ -1,0 +1,62 @@
+{
+    "player": [
+        {
+            "used": false,
+            "typeCarte": "duel",
+            "texte": [
+                {
+                    "used": false,
+                    "texteCarte": "je suis un gros prout",
+                    "suite": [
+
+                    ]
+                }
+            ]
+
+        },
+        {
+            "used": false,
+            "typeCarte": "dilemme",
+            "texte": [
+                {
+                    "used": false,
+                    "texteCarte": "j'adore choisir",
+                    "suite": [
+                        "zeub1",
+                        "zebi2"
+                    ]
+                }
+            ]
+
+        },
+        {
+            "used": false,
+            "typeCarte": "victime",
+            "texte": [
+                {
+                    "used": false,
+                    "texteCarte": "victime bolosse",
+                    "suite": [
+                        "bolosse1",
+                        "bolosse2"
+                    ]
+                }
+            ]
+        },
+        {
+            "used": false,
+            "typeCarte": "checkpoint",
+            "texte": [
+                {
+                    "used": false,
+                    "texteCarte": "petite pause",
+                    "suite": [
+                        "cp1",
+                        "cp2"
+                    ]
+                }
+            ]
+
+        }
+    ]
+}
