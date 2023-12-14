@@ -10,9 +10,15 @@
                     "suite": [
 
                     ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "je suis un gros caca",
+                    "suite": [
+
+                    ]
                 }
             ]
-
         },
         {
             "used": false,
@@ -25,9 +31,60 @@
                         "zeub1",
                         "zebi2"
                     ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "on peux choisir ouuuuuu",
+                    "suite": [
+                        "choix1",
+                        "choix2"
+                    ]
                 }
             ]
-
+        },
+        {
+            "used": false,
+            "typeCarte": "mfaible",
+            "texte": [
+                {
+                    "used": false,
+                    "texteCarte": "c'est ciao",
+                    "suite": [
+                        "loseeer1",
+                        "loseeer2"
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "salut mon pote",
+                    "suite": [
+                        "caca1",
+                        "caca2"
+                    ]
+                }
+            ]
+        },
+        {
+            "used": false,
+            "typeCarte": "immunité",
+            "texte": [
+                {
+                    "used": false,
+                    "texteCarte": "la protection youpi",
+                    "suite": [
+                        "boubou1",
+                        "boubou2"
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "solide le type",
+                    "suite": [
+                        "bibi1",
+                        "bibi2"
+                    ]
+                }
+            ]
         },
         {
             "used": false,
@@ -39,6 +96,14 @@
                     "suite": [
                         "bolosse1",
                         "bolosse2"
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "la sasa",
+                    "suite": [
+                        "sasa1",
+                        "sasa2"
                     ]
                 }
             ]
@@ -56,7 +121,6 @@
                     ]
                 }
             ]
-
         }
     ]
 }

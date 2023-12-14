@@ -25,11 +25,6 @@ public class SaveAndLoad : MonoBehaviour
             LoadFromJson();
         }
 
-        if (Input.GetKeyDown(KeyCode.T))
-        {
-            TirerUneCarte();
-        }
-
     }
 
     public Carte paquetCarte = new Carte();
@@ -54,16 +49,6 @@ public class SaveAndLoad : MonoBehaviour
         Debug.Log("Load OK");
     }
 
-    public void TirerUneCarte()
-    {
-
-        Debug.Log("Type carte : ");
-        Debug.Log(" Deja utilisé : ");
-        Debug.Log(" Texte de la carte : ");
-        Debug.Log(" Suite du texte : ");
-        Debug.Log(" Déjà utilisé : ");
-
-    }
 
     [System.Serializable]
     public class Carte
