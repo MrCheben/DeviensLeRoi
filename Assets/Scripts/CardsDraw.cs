@@ -126,60 +126,7 @@ public class CardsDraw : MonoBehaviour
         else if (cardType == "Checkpoint")
         {
             cardImage.texture = listImgCard[6].texture;
-        }
-/*
-        switch (cardType)
-        {
-            case "Bonus":
-                nbOfCards = bonusCard.Length;
-                if (nbOfCards != 0)
-                {
-                    aleatCard = Random.Range(0, nbOfCards);
-                    txtCard = bonusCard.GetValue(aleatCard).ToString();
-                }
-                break;
-            case "Malus":
-                nbOfCards = malusCard.Length;
-                if (nbOfCards != 0)
-                {
-                    aleatCard = Random.Range(0, nbOfCards);
-                    txtCard = malusCard.GetValue(aleatCard).ToString();
-                }
-                break;
-            case "Duel":
-                nbOfCards = duelCard.Length;
-                if (nbOfCards != 0)
-                {
-                    aleatCard = Random.Range(0, nbOfCards);
-                    txtCard = duelCard.GetValue(aleatCard).ToString();
-                }
-                break;
-            case "General":
-                nbOfCards = generalCard.Length;
-                if (nbOfCards != 0)
-                {
-                    aleatCard = Random.Range(0, nbOfCards);
-                    txtCard = generalCard.GetValue(aleatCard).ToString();
-                }
-                break;
-            case "Choix":
-                nbOfCards = choixCard.Length;
-                if (nbOfCards != 0)
-                {
-                    aleatCard = Random.Range(0, nbOfCards);
-                    txtCard = choixCard.GetValue(aleatCard).ToString();
-                }
-                break;
-
-            case "SF":
-                break;
-        
-            default:
-                break;
-        }
-
-        Debug.Log(txtCard);
-        return txtCard; */       
+        }      
     }
 
       void Update(){

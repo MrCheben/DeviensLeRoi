@@ -23,8 +23,8 @@ public class GlobalSystem : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        CanvasDebut.SetActive(true);
-        CanvasGame.SetActive(false);
+        CanvasDebut.SetActive(false);
+        CanvasGame.SetActive(true);
         CanvasEnd.SetActive(false);
     }
 

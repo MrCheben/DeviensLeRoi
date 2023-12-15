@@ -3,6 +3,7 @@ using System.Collections;
 using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 using static SaveAndLoad;
 
 public class test : MonoBehaviour   
@@ -10,11 +11,18 @@ public class test : MonoBehaviour
 
     public TextAsset jsonData;
     public PlayerList players = new PlayerList();
+    public GameObject btnChoix1;
+    public GameObject btnChoix2;
+    public Text typeCarte;
+    public Text texteCarte;
+    public Text textChoix1;
+    public Text textChoix2;
 
     public int tourCheckpoint = 0;
     public int typeUse = 0;
     public int texteUse = 0;
     public string suiteTexte = "";
+    public string suiteChoix = "";
 
 
     [System.Serializable]
@@ -31,6 +39,9 @@ public class test : MonoBehaviour
         public bool used;
         public string texteCarte;
         public string[] suite;
+        public string[] choix;
+        public string[] suitechoix;
+
     }
 
     [System.Serializable]
@@ -44,6 +55,8 @@ public class test : MonoBehaviour
     void Start()
     {
         players = JsonUtility.FromJson<PlayerList>(jsonData.text);
+        btnChoix1.SetActive(false);
+        btnChoix2.SetActive(false);
     }
 
 
@@ -55,6 +68,8 @@ public class test : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.R))
         {
+            btnChoix1.SetActive(false);
+            btnChoix2.SetActive(false);
             if (suiteTexte != "")
             {
                 Debug.Log(suiteTexte);
@@ -65,6 +80,14 @@ public class test : MonoBehaviour
                 randomCarte();
             }
         }
+    }
+
+    public void choixCarte()
+    {
+        btnChoix1.SetActive(false);
+        btnChoix2.SetActive(false);
+        Debug.Log(suiteChoix);
+        suiteChoix = "";
     }
 
     public void randomCarte()
@@ -98,9 +121,12 @@ public class test : MonoBehaviour
 
     public void tirageCarte()
     {
+
         int typeRange = Random.Range(0, players.player.Length - 1);
         int texteRange = Random.Range(0, players.player[typeRange].texte.Length);
         int suiteRange = Random.Range(0, players.player[typeRange].texte[texteRange].suite.Length);
+        int choixRange = Random.Range(0, players.player[typeRange].texte[texteRange].suitechoix.Length);
+
 
         if (tourCheckpoint < 3)
         {
@@ -121,6 +147,14 @@ public class test : MonoBehaviour
                     if (players.player[typeRange].texte[texteRange].suite.Length > 0)
                     {                        
                         suiteTexte = players.player[typeRange].texte[texteRange].suite[suiteRange];
+                    }
+                    if (players.player[typeRange].texte[texteRange].choix.Length > 0)
+                    {
+                        btnChoix1.SetActive(true);
+                        btnChoix2.SetActive(true);
+                        textChoix1.text = players.player[typeRange].texte[texteRange].choix[0];
+                        textChoix2.text = players.player[typeRange].texte[texteRange].choix[1];
+                        suiteChoix = players.player[typeRange].texte[texteRange].suitechoix[choixRange];
                     }
                 }
             }
