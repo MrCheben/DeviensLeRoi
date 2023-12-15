@@ -22,16 +22,31 @@ public class AlgoPerso : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            int countNb = 0;
+            foreach (var item in nbPlayed)
+            {
+                if (item == 1) {
+                    countNb += 1;
+                } 
+            }
+            if(countNb== nbPlayed.Count)
+            {
+                for (int i = 0; i < nbPlayed.Count; i++)
+                {
+                    nbPlayed[i] = 0;
+                }
+            }
             ListPlayerGame.Clear();
-            NbJ = Random.Range(1,5);
+            NbJ = Random.Range(2,5);
             addToCurrentList(0);
-            Debug.Log("Jeu a " + NbJ + " Joueurs");            
+
         }
     }
 
 
     public void addToCurrentList(int scoreP)
-    {        
+    {
+        Debug.Log("Jeu a " + NbJ + " Joueurs");
         //Ajout a la liste de transtion
         var index = 0;
         foreach (var item in nbPlayed)
@@ -74,7 +89,7 @@ public class AlgoPerso : MonoBehaviour
 
             // if pas assez de joueur on va chercher les autres jouurs qui sont deja 1 
             addToCurrentList(1);
-            //On Shuffle quand mï¿½me l'array
+            //On Shuffle quand même l'array
             transitionListPlayer = shuffleGOList(transitionListPlayer);
             for (int i = 0; i < nbPlayer - ListPlayerGame.Count; i++)
             {
@@ -82,27 +97,23 @@ public class AlgoPerso : MonoBehaviour
                 nbPlayed[listPlayer.FindIndex(a => a.Contains(transitionListPlayer[i].ToString()))] = 1;
             }
             transitionListPlayer.Clear();
-            ResetScoreP();
+            //Reset nbPlayed 0 to 1 & 1 to 0
+            for (int i = 0; i < ListPlayerGame.Count; i++)
+            {
+                if (nbPlayed[listPlayer.FindIndex(a => a.Contains(ListPlayerGame[i].ToString()))] == 1)
+                {
+                    nbPlayed[listPlayer.FindIndex(a => a.Contains(ListPlayerGame[i].ToString()))] = 0;
+                }
+                else
+                {
+                    nbPlayed[listPlayer.FindIndex(a => a.Contains(ListPlayerGame[i].ToString()))] = 1;
+                }
+
+
+            }
 
         }
 
-    }
-
-    private void ResetScoreP()
-    {
-        for (int i = 0; i < ListPlayerGame.Count; i++)
-        {
-            if (nbPlayed[listPlayer.FindIndex(a => a.Contains(ListPlayerGame[i].ToString()))] == 1)
-            {
-                nbPlayed[listPlayer.FindIndex(a => a.Contains(ListPlayerGame[i].ToString()))] = 0;
-            }
-            else
-            {
-                nbPlayed[listPlayer.FindIndex(a => a.Contains(ListPlayerGame[i].ToString()))] = 1;
-            }
-
-
-        }
     }
 
 
