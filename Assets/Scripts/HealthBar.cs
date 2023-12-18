@@ -11,7 +11,7 @@ public class HealthBar : MonoBehaviour
     public Text texte;
 
     public int maxVie = 10;
-    public int lastVie;
+    public int lastVie = 10;
 
     public void Trigger(int nbVie)
     {
@@ -23,7 +23,7 @@ public class HealthBar : MonoBehaviour
             }
             nbVie--;
             Coeur[nbVie].GetComponent<Image>().sprite = vide;
-            lastVie = 0;            
+            lastVie = lastVie - 1;            
         }
         else 
         {

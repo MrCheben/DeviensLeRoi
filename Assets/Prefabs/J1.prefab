@@ -1679,7 +1679,7 @@ MonoBehaviour:
   vide: {fileID: 21300000, guid: 3cce5c4be29f8854f9a5b2a8aa8bea6e, type: 3}
   texte: {fileID: 4028769077075050095}
   maxVie: 10
-  lastVie: 0
+  lastVie: 10
 --- !u!1 &5818474555925263828
 GameObject:
   m_ObjectHideFlags: 0
