@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
-using static test;
+//using static test;
 
 public class SaveAndLoad : MonoBehaviour
 {
@@ -62,7 +62,7 @@ public class SaveAndLoad : MonoBehaviour
     {
         public bool used;
         public string nomCarte;
-        public Texte[] textes;
+        //public Texte[] textes;
     }
 
     [System.Serializable]

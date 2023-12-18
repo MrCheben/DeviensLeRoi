@@ -7,14 +7,19 @@ public class GlobalSystem : MonoBehaviour
 {
 
     public List<InputField> listInputField;
-    public List<string> listPlayer;
-    public List<int> playerPlateauPosition;
+    AlgoPerso algoPerso;
+    AlgoCarte algoCarte;
+
     public int currentPlayer;
 
     public GameObject CanvasDebut;
     public GameObject CanvasGame;
     public GameObject CanvasEnd;
-    public GameObject CanvasCard;
+    public GameObject CanvasContext;
+    public GameObject CanvasVie;
+
+    public GameObject PrefabHealthBar;
+    Vector3 OffsetPrefabHealthBar = new Vector3(-200,230,0);
     //public GameObject Test;
 
     public Text textGagnant;
@@ -23,15 +28,14 @@ public class GlobalSystem : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        CanvasDebut.SetActive(false);
-        CanvasGame.SetActive(true);
-        CanvasEnd.SetActive(false);
+        changeCanvas("Debut");
+        algoPerso = GetComponent<AlgoPerso>();
+        algoCarte = GetComponent<AlgoCarte>();
     }
 
     // Update is called once per frame
     void Update()
     {
-
 
     }
 
@@ -40,81 +44,43 @@ public class GlobalSystem : MonoBehaviour
 
         for (int i = 0; i < listInputField.Count; i++)
         {
-            if (listInputField[i].text == "")
-            {
-
-            }
-            else {
-                listPlayer.Add(listInputField[i].text);
-                playerPlateauPosition.Add(0);
+            if (listInputField[i].text != ""){
+                algoPerso.listPlayer.Add(listInputField[i].text);
+                algoPerso.nbPlayed.Add(0);
             }
 
         }
+
+
+        for (int i = 0; i < algoPerso.nbPlayed.Count; i++)
+        {
+            GameObject HealthBar = Instantiate(PrefabHealthBar);
+            HealthBar.transform.SetParent(CanvasVie.transform, false);
+            HealthBar.transform.position= CanvasVie.transform.position + OffsetPrefabHealthBar;
+            HealthBar.GetComponent<Text>().text = algoPerso.listPlayer[i];
+            OffsetPrefabHealthBar += new Vector3(0, -50,0);
+        }
+
+
         currentPlayer = 0;
-        changeCanvas("CanvasGame");
-        CanvasDebut.SetActive(false);
-        CanvasGame.SetActive(true);
+        changeCanvas("Context");
         //Turn();
     }
 
-    public int lanceDe()
-    {
-        var randomDe = Random.Range(1, 7); 
-        playerPlateauPosition[currentPlayer] +=randomDe;
-        if (playerPlateauPosition[currentPlayer] >= 22) {
-            FinDeGame(currentPlayer);
-        }
-        return randomDe;
 
-    }
-
-/*
-    public void changeTurn()
-    {
-        changePlayerTurn();
-        btnSuivant.SetActive(false);
-        Turn();
-    }
-*/
-/*
-    public int changePlayerTurn() {
-        if (currentPlayer == listPlayer.Count-1)
-        {
-            currentPlayer = 0;
-            
-        }
-        else {
-            currentPlayer++;
-        }
-        textJoueurActif.text = listPlayer[currentPlayer];
-        return currentPlayer;
-       
-    }
-*/
-/*
-    public void Turn()
-    {
-        print("D� : "+lanceDe());
-        // Sur quelle type de case il tombe
-        GameObject.Find("DrawCard").GetComponent<CardsDraw>().drawCard(playerPlateauPosition[currentPlayer]);
-        //btnSuivant.SetActive(true);
-
-
-    }
-*/
-    public void FinDeGame(int gagant ) {
+    /*public void FinDeGame(int gagant ) {
         changeCanvas("CanvasEndGame");
         textGagnant.text="GAGNANT "+ listPlayer[gagant];
         
 
 
-    }
+    }*/
 
 
-    public void Rejouer()
+    /*public void Rejouer()
     {
         SceneManager.LoadScene(0);
-    }
+    }*/
 
     public void changeCanvas(string etat)
     {
@@ -123,20 +89,47 @@ public class GlobalSystem : MonoBehaviour
             CanvasDebut.SetActive(true);
             CanvasGame.SetActive(false);
             CanvasEnd.SetActive(false);
+            CanvasContext.SetActive(false);
+            CanvasVie.SetActive(false);
+        }
+        
+        else if (etat == "Context")
+        {
+            CanvasContext.SetActive(true);
+            CanvasDebut.SetActive(false);
+            CanvasGame.SetActive(false);
+            CanvasEnd.SetActive(false);
+            CanvasVie.SetActive(false);
         }
         else if (etat == "Game")
         {
             CanvasDebut.SetActive(false);
             CanvasGame.SetActive(true);
             CanvasEnd.SetActive(false);
-            //textJoueurActif.text =listPlayer[currentPlayer];
+            CanvasContext.SetActive(false);
+            CanvasVie.SetActive(false);
+            if (!algoCarte.gameStarted)
+            {
+                algoCarte.tirageCarte();
+            }
+            
         }
+        else if (etat == "Vie")
+        {
+            CanvasDebut.SetActive(false);
+            CanvasGame.SetActive(false);
+            CanvasEnd.SetActive(false);
+            CanvasContext.SetActive(false);
+            CanvasVie.SetActive(true);
+        }
+        
         else if (etat == "End")
         {
             CanvasDebut.SetActive(false);
             CanvasGame.SetActive(false);
             CanvasEnd.SetActive(true);
-            CanvasCard.SetActive(false);
+            CanvasContext.SetActive(false);
+            CanvasVie.SetActive(false);
         }
     }
 

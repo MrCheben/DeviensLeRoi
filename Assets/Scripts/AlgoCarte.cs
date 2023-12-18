@@ -6,23 +6,25 @@ using UnityEngine;
 using UnityEngine.UI;
 using static SaveAndLoad;
 
-public class test : MonoBehaviour   
+public class AlgoCarte : MonoBehaviour   
 {
 
     public TextAsset jsonData;
     public PlayerList players = new PlayerList();
     public GameObject btnChoix1;
     public GameObject btnChoix2;
+    public GameObject btnSuivant;
     public Text typeCarte;
     public Text texteCarte;
-    public Text textChoix1;
-    public Text textChoix2;
+    Text textChoix1;
+    Text textChoix2;
 
     public int tourCheckpoint = 0;
     public int typeUse = 0;
     public int texteUse = 0;
     public string suiteTexte = "";
     public string suiteChoix = "";
+    public bool gameStarted=false;
 
 
     [System.Serializable]
@@ -50,35 +52,39 @@ public class test : MonoBehaviour
         public Player[] player;
     }
 
-
-    // Start is called before the first frame update
     void Start()
     {
         players = JsonUtility.FromJson<PlayerList>(jsonData.text);
         btnChoix1.SetActive(false);
         btnChoix2.SetActive(false);
+        textChoix1=btnChoix1.GetComponentInChildren<Text>();
+        textChoix2 = btnChoix2.GetComponentInChildren<Text>();
+
     }
 
 
 
-    // Update is called once per frame
     void Update()
     {
+    }
 
+    public void tirageCarte()
+    {
 
-        if (Input.GetKeyDown(KeyCode.R))
+        if (!gameStarted)
         {
-            btnChoix1.SetActive(false);
-            btnChoix2.SetActive(false);
-            if (suiteTexte != "")
-            {
-                Debug.Log(suiteTexte);
-                suiteTexte = "";
-            }
-            else
-            {
-                randomCarte();
-            }
+            gameStarted = true;
+        }
+
+        if (suiteTexte != "")
+        {
+            texteCarte.text = suiteTexte;
+            //Debug.Log(suiteTexte);
+            suiteTexte = "";
+        }
+        else
+        {
+            randomCarte();
         }
     }
 
@@ -86,12 +92,15 @@ public class test : MonoBehaviour
     {
         btnChoix1.SetActive(false);
         btnChoix2.SetActive(false);
-        Debug.Log(suiteChoix);
+        btnSuivant.SetActive(true);
+        //Debug.Log(suiteChoix);
+        texteCarte.text = suiteChoix;
         suiteChoix = "";
     }
 
     public void randomCarte()
     {
+
         foreach (var item in players.player)
         {
             if (item.typeCarte != "checkpoint")
@@ -105,21 +114,21 @@ public class test : MonoBehaviour
                         {
                             players.player[i].used = false;
                         }
-                        tirageCarte();
+                        checkCarte();
                         break;
                     }
                 }
                 else
                 {
                     typeUse = 0;
-                    tirageCarte();
+                    checkCarte();
                     break;
                 }
             }
         }
     }
 
-    public void tirageCarte()
+    public void checkCarte()
     {
 
         int typeRange = Random.Range(0, players.player.Length - 1);
@@ -138,9 +147,11 @@ public class test : MonoBehaviour
             {
                 if (players.player[typeRange].texte[texteRange].used == false)
                 {
-                    Debug.Log("Not Used");
-                    Debug.Log(players.player[typeRange].typeCarte);
-                    Debug.Log(players.player[typeRange].texte[texteRange].texteCarte);
+                    //Debug.Log("Not Used");
+                    //Debug.Log(players.player[typeRange].typeCarte);
+                    typeCarte.text = players.player[typeRange].typeCarte;
+                    //Debug.Log(players.player[typeRange].texte[texteRange].texteCarte);
+                    texteCarte.text = players.player[typeRange].texte[texteRange].texteCarte;
                     players.player[typeRange].used = true;
                     players.player[typeRange].texte[texteRange].used = true;
                     tourCheckpoint++;
@@ -152,6 +163,7 @@ public class test : MonoBehaviour
                     {
                         btnChoix1.SetActive(true);
                         btnChoix2.SetActive(true);
+                        btnSuivant.SetActive(false);
                         textChoix1.text = players.player[typeRange].texte[texteRange].choix[0];
                         textChoix2.text = players.player[typeRange].texte[texteRange].choix[1];
                         suiteChoix = players.player[typeRange].texte[texteRange].suitechoix[choixRange];
@@ -161,8 +173,10 @@ public class test : MonoBehaviour
         }
         else
         {
-            Debug.Log(players.player[^1].typeCarte);
-            Debug.Log(players.player[^1].texte[0].texteCarte);
+            //Debug.Log(players.player[^1].typeCarte);
+            typeCarte.text = players.player[^1].typeCarte;
+            //Debug.Log(players.player[^1].texte[0].texteCarte);
+            texteCarte.text = players.player[^1].texte[0].texteCarte;
             tourCheckpoint = 0;
         }
     }
