@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 public class GlobalSystem : MonoBehaviour
 {
 
     public List<InputField> listInputField;
     AlgoPerso algoPerso;
     AlgoCarte algoCarte;
-
+    AddPlayer addPlayer;
     public int currentPlayer;
 
     public GameObject CanvasDebut;
@@ -17,7 +18,7 @@ public class GlobalSystem : MonoBehaviour
     public GameObject CanvasEnd;
     public GameObject CanvasContext;
     public GameObject CanvasVie;
-
+    public TMP_Text ErrorPlayerText;
     public GameObject PrefabHealthBar;
     Vector3 OffsetPrefabHealthBar = new Vector3(-200,230,0);
     //public GameObject Test;
@@ -31,6 +32,7 @@ public class GlobalSystem : MonoBehaviour
         changeCanvas("Debut");
         algoPerso = GetComponent<AlgoPerso>();
         algoCarte = GetComponent<AlgoCarte>();
+        addPlayer = GetComponent<AddPlayer>();
     }
 
     // Update is called once per frame
@@ -41,14 +43,12 @@ public class GlobalSystem : MonoBehaviour
 
 
     public void CatchPlayerName() {
-
-        for (int i = 0; i < listInputField.Count; i++)
+        if (addPlayer.PlayerList.Count >= 4)
         {
-            if (listInputField[i].text != ""){
-                algoPerso.listPlayer.Add(listInputField[i].text);
+        for (int i = 0; i < addPlayer.PlayerList.Count; i++)
+        {
+                algoPerso.listPlayer.Add(addPlayer.PlayerList[i].GetComponentInChildren<TMP_Text>().text);
                 algoPerso.nbPlayed.Add(0);
-            }
-
         }
 
 
@@ -64,7 +64,20 @@ public class GlobalSystem : MonoBehaviour
 
         currentPlayer = 0;
         changeCanvas("Context");
-        //Turn();
+            //Turn();
+        }
+        else
+        {
+            ErrorPlayerText.gameObject.GetComponent<Animator>().Play("FadeOut");
+            //StartCoroutine(DisplayErroMessage());
+        }
+    }
+
+    IEnumerator DisplayErroMessage()
+    {
+        yield return new WaitForSeconds(3);
+        
+        //ErrorPlayerText.gameObject.SetActive(false);
     }
 
 
