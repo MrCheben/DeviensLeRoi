@@ -16,6 +16,7 @@ public class AddPlayer : MonoBehaviour
     public Button PlayerCustom;
     public List<GameObject> PlayerList;
     public List<Transform> PlayerNameSpawn;
+    public TMP_Text ErrorPlayerText;
     //Vector3 OffsetPrefabPlayer = new Vector3(-230, 150, 0);
     public int NbJoueur;
 
@@ -80,7 +81,7 @@ public class AddPlayer : MonoBehaviour
     public void addPlayer()
     {
         Debug.Log("addPlayer");
-        if (NbJoueur < 9)
+        if (NbJoueur < 8)
         {
             if (PlayerName.text != "")
             {
@@ -108,7 +109,8 @@ public class AddPlayer : MonoBehaviour
         }
         else
         {
-            Debug.Log("Joueur max atteint");
+            ErrorPlayerText.text = "8 Joueurs maximums";
+            ErrorPlayerText.gameObject.GetComponent<Animator>().Play("FadeOut");
             PlayerName.text = "";
         }
     }
@@ -124,7 +126,6 @@ public class AddPlayer : MonoBehaviour
     public void addCustomName()
     {
         addCustomPlayer.SetActive(false);
-        Debug.Log("custom");
         PlayerCustom.GetComponentInChildren<TMP_Text>().text = PlayerName.text;
         if (PlayerName.text == "")
         {
@@ -142,7 +143,6 @@ public class AddPlayer : MonoBehaviour
         int indexP=PlayerList.IndexOf(playerR);
         for (int i = indexP+1; i < PlayerList.Count; i++)
         {
-            Debug.Log(PlayerList[i].name);
             PlayerList[i].transform.position = PlayerNameSpawn[i - 1].position;
         }
         Destroy(playerR);

@@ -6,8 +6,6 @@ using UnityEngine.SceneManagement;
 using TMPro;
 public class GlobalSystem : MonoBehaviour
 {
-
-    public List<InputField> listInputField;
     AlgoPerso algoPerso;
     AlgoCarte algoCarte;
     AddPlayer addPlayer;
@@ -20,7 +18,7 @@ public class GlobalSystem : MonoBehaviour
     public GameObject CanvasVie;
     public TMP_Text ErrorPlayerText;
     public GameObject PrefabHealthBar;
-    Vector3 OffsetPrefabHealthBar = new Vector3(-200,230,0);
+    Vector3 OffsetPrefabHealthBar = new Vector3(-600,510,0);
     //public GameObject Test;
 
     public Text textGagnant;
@@ -58,7 +56,7 @@ public class GlobalSystem : MonoBehaviour
             HealthBar.transform.SetParent(CanvasVie.transform, false);
             HealthBar.transform.position= CanvasVie.transform.position + OffsetPrefabHealthBar;
             HealthBar.GetComponent<Text>().text = algoPerso.listPlayer[i];
-            OffsetPrefabHealthBar += new Vector3(0, -50,0);
+            OffsetPrefabHealthBar += new Vector3(0, -150,0);
         }
 
 
@@ -68,6 +66,7 @@ public class GlobalSystem : MonoBehaviour
         }
         else
         {
+            ErrorPlayerText.text = "4 Joueurs minimuns";
             ErrorPlayerText.gameObject.GetComponent<Animator>().Play("FadeOut");
             //StartCoroutine(DisplayErroMessage());
         }

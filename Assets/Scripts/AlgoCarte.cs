@@ -4,6 +4,7 @@ using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 using static SaveAndLoad;
 
 public class AlgoCarte : MonoBehaviour   
@@ -14,10 +15,10 @@ public class AlgoCarte : MonoBehaviour
     public GameObject btnChoix1;
     public GameObject btnChoix2;
     public GameObject btnSuivant;
-    public Text typeCarte;
-    public Text texteCarte;
-    Text textChoix1;
-    Text textChoix2;
+    public TMP_Text typeCarte;
+    public TMP_Text texteCarte;
+    TMP_Text textChoix1;
+    TMP_Text textChoix2;
 
     public int tourCheckpoint = 0;
     public int typeUse = 0;
@@ -32,6 +33,7 @@ public class AlgoCarte : MonoBehaviour
     {
         public bool used;
         public string typeCarte;
+        public int nbJoueur;
         public Texte[] texte;
     }
 
@@ -57,9 +59,8 @@ public class AlgoCarte : MonoBehaviour
         players = JsonUtility.FromJson<PlayerList>(jsonData.text);
         btnChoix1.SetActive(false);
         btnChoix2.SetActive(false);
-        textChoix1=btnChoix1.GetComponentInChildren<Text>();
-        textChoix2 = btnChoix2.GetComponentInChildren<Text>();
-
+        textChoix1=btnChoix1.GetComponentInChildren<TMP_Text>();
+        textChoix2 = btnChoix2.GetComponentInChildren<TMP_Text>();
     }
 
 
@@ -79,7 +80,6 @@ public class AlgoCarte : MonoBehaviour
         if (suiteTexte != "")
         {
             texteCarte.text = suiteTexte;
-            //Debug.Log(suiteTexte);
             suiteTexte = "";
         }
         else
@@ -93,7 +93,6 @@ public class AlgoCarte : MonoBehaviour
         btnChoix1.SetActive(false);
         btnChoix2.SetActive(false);
         btnSuivant.SetActive(true);
-        //Debug.Log(suiteChoix);
         texteCarte.text = suiteChoix;
         suiteChoix = "";
     }
@@ -147,10 +146,7 @@ public class AlgoCarte : MonoBehaviour
             {
                 if (players.player[typeRange].texte[texteRange].used == false)
                 {
-                    //Debug.Log("Not Used");
-                    //Debug.Log(players.player[typeRange].typeCarte);
                     typeCarte.text = players.player[typeRange].typeCarte;
-                    //Debug.Log(players.player[typeRange].texte[texteRange].texteCarte);
                     texteCarte.text = players.player[typeRange].texte[texteRange].texteCarte;
                     players.player[typeRange].used = true;
                     players.player[typeRange].texte[texteRange].used = true;
@@ -173,9 +169,7 @@ public class AlgoCarte : MonoBehaviour
         }
         else
         {
-            //Debug.Log(players.player[^1].typeCarte);
             typeCarte.text = players.player[^1].typeCarte;
-            //Debug.Log(players.player[^1].texte[0].texteCarte);
             texteCarte.text = players.player[^1].texte[0].texteCarte;
             tourCheckpoint = 0;
         }

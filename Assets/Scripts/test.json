@@ -3,6 +3,7 @@
         {
             "used": false,
             "typeCarte": "duel",
+            "nbJoueur": 2,
             "texte": [
                 {
                     "used": false,
@@ -37,10 +38,11 @@
         {
             "used": false,
             "typeCarte": "dilemme",
+            "nbJoueur": 2,
             "texte": [
                 {
                     "used": false,
-                    "texteCarte": "j'adore choisir",
+                    "texteCarte": "J1 tu te bats contre J2 dans une maison abandonné , il y a un levier l'actionne tu ?",
                     "suite": [
                         "zeub1",
                         "zebi2"
@@ -54,7 +56,7 @@
                 },
                 {
                     "used": false,
-                    "texteCarte": "on peux choisir ouuuuuu",
+                    "texteCarte": "J1 et J2 découvrent un coffre fermé dans une vieille taverne abandonnée. J1 doit décider s'il tente de l'ouvrir, prenant le risque de déclencher un piège ou de libérer quelque chose de précieux.",
                     "suite": [
                         "choix1",
                         "choix2"
@@ -71,6 +73,7 @@
         {
             "used": false,
             "typeCarte": "mfaible",
+            "nbJoueur": 3,
             "texte": [
                 {
                     "used": false,
@@ -105,10 +108,11 @@
         {
             "used": false,
             "typeCarte": "immunité",
+            "nbJoueur": 1,
             "texte": [
                 {
                     "used": false,
-                    "texteCarte": "la protection youpi",
+                    "texteCarte": "J1 participe à un tournoi d'escrime et gagne une compétence améliorée qui lui permet d'esquiver plus efficacement les attaques adverses lors des duels.",
                     "suite": [
                         "boubou1",
                         "boubou2"
@@ -122,7 +126,7 @@
                 },
                 {
                     "used": false,
-                    "texteCarte": "solide le type",
+                    "texteCarte": "J2 remporte un bouclier magique après avoir résolu une énigme dans un temple ancien. Ce bouclier lui confère la capacité de repousser les attaques magiques.",
                     "suite": [
                         "bibi1",
                         "bibi2"
@@ -139,10 +143,11 @@
         {
             "used": false,
             "typeCarte": "victime",
+            "nbJoueur": 2,
             "texte": [
                 {
                     "used": false,
-                    "texteCarte": "victime bolosse",
+                    "texteCarte": "J1 trouve J2 enterré la tete dans le sol, J1 tente de lui mettre un coup de pied dans la tête ou l'aider",
                     "suite": [
                         "bolosse1",
                         "bolosse2"
@@ -156,7 +161,7 @@
                 },
                 {
                     "used": false,
-                    "texteCarte": "la sasa",
+                    "texteCarte": "J1 découvre J2, piégé sous des décombres lors d'un effondrement de structure. J1 peut choisir d'essayer de libérer J2 en lui apportant de l'aide ou de l'abandonner.",
                     "suite": [
                         "sasa1",
                         "sasa2"
@@ -173,6 +178,7 @@
         {
             "used": false,
             "typeCarte": "checkpoint",
+            "nbJoueur": 0,
             "texte": [
                 {
                     "used": false,
