@@ -19,7 +19,6 @@ public class AlgoCarte : MonoBehaviour
     public TMP_Text texteCarte;
     TMP_Text textChoix1;
     TMP_Text textChoix2;
-
     public int tourCheckpoint = 0;
     public int typeUse = 0;
     public int texteUse = 0;
@@ -45,7 +44,6 @@ public class AlgoCarte : MonoBehaviour
         public string[] suite;
         public string[] choix;
         public string[] suitechoix;
-
     }
 
     [System.Serializable]
@@ -63,15 +61,12 @@ public class AlgoCarte : MonoBehaviour
         textChoix2 = btnChoix2.GetComponentInChildren<TMP_Text>();
     }
 
-
-
     void Update()
     {
     }
 
     public void tirageCarte()
     {
-
         if (!gameStarted)
         {
             gameStarted = true;
@@ -99,7 +94,6 @@ public class AlgoCarte : MonoBehaviour
 
     public void randomCarte()
     {
-
         foreach (var item in players.player)
         {
             if (item.typeCarte != "checkpoint")
@@ -129,13 +123,10 @@ public class AlgoCarte : MonoBehaviour
 
     public void checkCarte()
     {
-
         int typeRange = Random.Range(0, players.player.Length - 1);
         int texteRange = Random.Range(0, players.player[typeRange].texte.Length);
         int suiteRange = Random.Range(0, players.player[typeRange].texte[texteRange].suite.Length);
         int choixRange = Random.Range(0, players.player[typeRange].texte[texteRange].suitechoix.Length);
-
-
         if (tourCheckpoint < 3)
         {
             if (players.player[typeRange].used == true)
@@ -174,6 +165,4 @@ public class AlgoCarte : MonoBehaviour
             tourCheckpoint = 0;
         }
     }
-
-
 }

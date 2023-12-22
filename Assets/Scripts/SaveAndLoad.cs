@@ -24,7 +24,6 @@ public class SaveAndLoad : MonoBehaviour
         {
             LoadFromJson();
         }
-
     }
 
     public Carte paquetCarte = new Carte();
@@ -42,10 +41,7 @@ public class SaveAndLoad : MonoBehaviour
     {
         string filePath = Application.persistentDataPath + "/CarteData.json";
         string carteData = System.IO.File.ReadAllText(filePath);
-
         paquetCarte = JsonUtility.FromJson<Carte>(carteData);
-
-
         Debug.Log("Load OK");
     }
 
@@ -73,6 +69,4 @@ public class SaveAndLoad : MonoBehaviour
         public string texteCarte;
         public string[] suite;
     }
-
 }
-

@@ -17,7 +17,6 @@ public class AddPlayer : MonoBehaviour
     public List<GameObject> PlayerList;
     public List<Transform> PlayerNameSpawn;
     public TMP_Text ErrorPlayerText;
-    //Vector3 OffsetPrefabPlayer = new Vector3(-230, 150, 0);
     public int NbJoueur;
 
     // Start is called before the first frame update
@@ -32,52 +31,6 @@ public class AddPlayer : MonoBehaviour
         
     }
 
-
-    /*public void addPlayer()
-    {
-        if (NbJoueur < 9)
-        {
-            if (NbJoueur != 4)
-            {
-                if (PlayerName.text != "")
-                {
-                    Button Player = Instantiate(PrefabPlayer);
-                    Player.transform.SetParent(CanvasPlayer.transform, false);
-                    Player.transform.position = CanvasPlayer.transform.position + OffsetPrefabPlayer;
-                    Player.GetComponentInChildren<TMP_Text>().text = PlayerName.text;
-                    Player.onClick.AddListener(delegate { customName(Player,NbJoueur+1); });
-                    //Player.GetComponentInChildren<Button>().onClick.AddListener(delegate { removePlayer(Player.gameObject); });
-                    Button[] arrayChildrenBtn = Player.GetComponentsInChildren<Button>();
-                    Button DeletePlayer = arrayChildrenBtn[1];
-                    DeletePlayer.onClick.AddListener(delegate { removePlayer(Player.gameObject); });
-
-
-                    PlayerList.Add(Player.gameObject);
-                    NbJoueur++;
-                    PlayerName.text = "";
-                    OffsetPrefabPlayer += new Vector3(0, -50, 0);
-                }
-                else
-                {
-                    Debug.Log("Nom vide");
-                }
-            }
-            else
-            {
-                OffsetPrefabPlayer = new Vector3(230, 150, 0);
-                NbJoueur ++;
-                addPlayer();
-            }
-        }
-        else
-        {
-            Debug.Log("Joueur max atteint");
-            PlayerName.text = "";
-        }
-    }*/
-
-
-
     public void addPlayer()
     {
         Debug.Log("addPlayer");
@@ -90,8 +43,7 @@ public class AddPlayer : MonoBehaviour
                 Player.transform.SetParent(CanvasPlayer.transform, false);
                 Player.transform.position = PlayerNameSpawn[NbJoueur].position;
                 Player.GetComponentInChildren<TMP_Text>().text = PlayerName.text;
-                Player.onClick.AddListener(delegate { customName(Player, NbJoueur + 1); });
-                //Player.GetComponentInChildren<Button>().onClick.AddListener(delegate { removePlayer(Player.gameObject); });
+                Player.onClick.AddListener(delegate { customName(Player, NbJoueur + 1); });            
                 Button[] arrayChildrenBtn = Player.GetComponentsInChildren<Button>();
                 Button DeletePlayer = arrayChildrenBtn[1];
                 DeletePlayer.onClick.AddListener(delegate { removePlayer(Player.gameObject); });

@@ -10,7 +10,6 @@ public class GlobalSystem : MonoBehaviour
     AlgoCarte algoCarte;
     AddPlayer addPlayer;
     public int currentPlayer;
-
     public GameObject CanvasDebut;
     public GameObject CanvasGame;
     public GameObject CanvasEnd;
@@ -18,11 +17,8 @@ public class GlobalSystem : MonoBehaviour
     public GameObject CanvasVie;
     public TMP_Text ErrorPlayerText;
     public GameObject PrefabHealthBar;
-    Vector3 OffsetPrefabHealthBar = new Vector3(-600,510,0);
-    //public GameObject Test;
-
     public Text textGagnant;
-    //public Text textJoueurActif;
+    Vector3 OffsetPrefabHealthBar = new Vector3(-600,510,0);    
 
     // Start is called before the first frame update
     void Start()
@@ -39,7 +35,6 @@ public class GlobalSystem : MonoBehaviour
 
     }
 
-
     public void CatchPlayerName() {
         if (addPlayer.PlayerList.Count >= 4)
         {
@@ -48,8 +43,6 @@ public class GlobalSystem : MonoBehaviour
                 algoPerso.listPlayer.Add(addPlayer.PlayerList[i].GetComponentInChildren<TMP_Text>().text);
                 algoPerso.nbPlayed.Add(0);
         }
-
-
         for (int i = 0; i < algoPerso.nbPlayed.Count; i++)
         {
             GameObject HealthBar = Instantiate(PrefabHealthBar);
@@ -58,11 +51,8 @@ public class GlobalSystem : MonoBehaviour
             HealthBar.GetComponent<Text>().text = algoPerso.listPlayer[i];
             OffsetPrefabHealthBar += new Vector3(0, -150,0);
         }
-
-
         currentPlayer = 0;
         changeCanvas("Context");
-            //Turn();
         }
         else
         {
@@ -76,23 +66,7 @@ public class GlobalSystem : MonoBehaviour
     {
         yield return new WaitForSeconds(3);
         
-        //ErrorPlayerText.gameObject.SetActive(false);
     }
-
-
-    /*public void FinDeGame(int gagant ) {
-        changeCanvas("CanvasEndGame");
-        textGagnant.text="GAGNANT "+ listPlayer[gagant];
-        
-
-
-    }*/
-
-
-    /*public void Rejouer()
-    {
-        SceneManager.LoadScene(0);
-    }*/
 
     public void changeCanvas(string etat)
     {
@@ -145,4 +119,14 @@ public class GlobalSystem : MonoBehaviour
         }
     }
 
+    public void DeathPlayer()
+    {
+        foreach (var item in transform)
+        {
+            if (true)
+            {
+                
+            }
+        }
+    }
 }
