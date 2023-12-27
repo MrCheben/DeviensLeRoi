@@ -33,7 +33,7 @@ public class AddPlayer : MonoBehaviour
 
     public void addPlayer()
     {
-        Debug.Log("addPlayer");
+
         if (NbJoueur < 8)
         {
             if (PlayerName.text != "")

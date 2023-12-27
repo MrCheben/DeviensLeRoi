@@ -9,7 +9,7 @@ public class HealthBar : MonoBehaviour
     public Sprite plein;
     public Sprite vide;
     public Text texte;
-
+    public int indexListPlayer;
     public int maxVie = 10;
     public int lastVie = 10;
 
@@ -22,8 +22,10 @@ public class HealthBar : MonoBehaviour
                 Coeur[u].GetComponent<Image>().sprite = vide;
             }
             nbVie--;
+
             Coeur[nbVie].GetComponent<Image>().sprite = vide;
-            lastVie = lastVie - 1;            
+            lastVie = lastVie - 1;   
+
         }
         else 
         {
@@ -38,5 +40,10 @@ public class HealthBar : MonoBehaviour
             lastVie = nbVie;            
         }
         texte.text = nbVie.ToString();
+        if(nbVie == 0)
+        {
+            GameObject.Find("MainGameplay").GetComponent<AlgoPerso>().nbPlayed[indexListPlayer] = -1;
+            //REMMETTRE A  SI JOEUR A + de 0 VIE
+        }
     }    
 }

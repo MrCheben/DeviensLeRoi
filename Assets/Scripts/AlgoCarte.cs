@@ -67,6 +67,7 @@ public class AlgoCarte : MonoBehaviour
 
     public void tirageCarte()
     {
+        Debug.Log("tirageCarte");
         if (!gameStarted)
         {
             gameStarted = true;
@@ -94,6 +95,8 @@ public class AlgoCarte : MonoBehaviour
 
     public void randomCarte()
     {
+
+
         foreach (var item in players.player)
         {
             if (item.typeCarte != "checkpoint")
@@ -103,9 +106,11 @@ public class AlgoCarte : MonoBehaviour
                     typeUse++;
                     if (typeUse == players.player.Length - 1)
                     {
+                        Debug.Log("Reset");
                         for (int i = 0; i < players.player.Length - 1; i++)
                         {
                             players.player[i].used = false;
+                            Debug.Log(players.player[i].typeCarte);
                         }
                         checkCarte();
                         break;
@@ -123,6 +128,7 @@ public class AlgoCarte : MonoBehaviour
 
     public void checkCarte()
     {
+        
         int typeRange = Random.Range(0, players.player.Length - 1);
         int texteRange = Random.Range(0, players.player[typeRange].texte.Length);
         int suiteRange = Random.Range(0, players.player[typeRange].texte[texteRange].suite.Length);
@@ -130,23 +136,32 @@ public class AlgoCarte : MonoBehaviour
         if (tourCheckpoint < 3)
         {
             if (players.player[typeRange].used == true)
-            {                
+            {
+                Debug.Log("Carte "+ players.player[typeRange].typeCarte);
+                Debug.Log("Carte USED");
                 randomCarte();
             }
             else
             {
+                Debug.Log("Carte " + players.player[typeRange].typeCarte);
+                Debug.Log("Carte NOT USED");
                 if (players.player[typeRange].texte[texteRange].used == false)
                 {
+                    Debug.Log("Carte NOT USED 2");
                     typeCarte.text = players.player[typeRange].typeCarte;
+                    GetComponent<AlgoPerso>().TirerPlayer(0);
                     texteCarte.text = players.player[typeRange].texte[texteRange].texteCarte;
+                    Debug.Log(players.player[typeRange].texte[texteRange].texteCarte);
                     players.player[typeRange].used = true;
                     players.player[typeRange].texte[texteRange].used = true;
                     tourCheckpoint++;
                     if (players.player[typeRange].texte[texteRange].suite.Length > 0)
-                    {                        
+                    {
                         suiteTexte = players.player[typeRange].texte[texteRange].suite[suiteRange];
+                        //DETRUIRE players.player[typeRange].texte[texteRange]
+
                     }
-                    if (players.player[typeRange].texte[texteRange].choix.Length > 0)
+                    else if (players.player[typeRange].texte[texteRange].choix.Length > 0)
                     {
                         btnChoix1.SetActive(true);
                         btnChoix2.SetActive(true);
@@ -154,13 +169,26 @@ public class AlgoCarte : MonoBehaviour
                         textChoix1.text = players.player[typeRange].texte[texteRange].choix[0];
                         textChoix2.text = players.player[typeRange].texte[texteRange].choix[1];
                         suiteChoix = players.player[typeRange].texte[texteRange].suitechoix[choixRange];
+                        //DETRUIRE players.player[typeRange].texte[texteRange]
                     }
+                    else
+                    {
+                        //DETRUIRE players.player[typeRange].texte[texteRange]
+                        //players.player.Remove()
+                    }
+
+                }
+                else {
+                    //Solution temporaire bug Aprés reset carte deja utilisé 
+                    randomCarte();
                 }
             }
         }
         else
         {
+            Debug.Log("tourCheckpoint");
             typeCarte.text = players.player[^1].typeCarte;
+            GetComponent<AlgoPerso>().TirerPlayer(0);
             texteCarte.text = players.player[^1].texte[0].texteCarte;
             tourCheckpoint = 0;
         }

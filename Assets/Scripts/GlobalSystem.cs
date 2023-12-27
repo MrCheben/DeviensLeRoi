@@ -45,10 +45,13 @@ public class GlobalSystem : MonoBehaviour
         }
         for (int i = 0; i < algoPerso.nbPlayed.Count; i++)
         {
+
             GameObject HealthBar = Instantiate(PrefabHealthBar);
+            HealthBar.GetComponentInChildren<HealthBar>().indexListPlayer = i;
             HealthBar.transform.SetParent(CanvasVie.transform, false);
             HealthBar.transform.position= CanvasVie.transform.position + OffsetPrefabHealthBar;
             HealthBar.GetComponent<Text>().text = algoPerso.listPlayer[i];
+
             OffsetPrefabHealthBar += new Vector3(0, -150,0);
         }
         currentPlayer = 0;

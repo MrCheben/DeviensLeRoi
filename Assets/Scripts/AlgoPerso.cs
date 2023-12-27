@@ -17,36 +17,33 @@ public class AlgoPerso : MonoBehaviour
         
     }
 
-    // Update is called once per frame
-    void Update()
+    public void TirerPlayer(int nbPlayer)
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        int countNb = 0;
+        foreach (var item in nbPlayed)
         {
-            int countNb = 0;
-            foreach (var item in nbPlayed)
+            if (item == 1)
             {
-                if (item == 1) {
-                    countNb += 1;
-                } 
+                countNb += 1;
             }
-            if(countNb== nbPlayed.Count)
-            {
-                for (int i = 0; i < nbPlayed.Count; i++)
-                {
-                    nbPlayed[i] = 0;
-                }
-            }
-            ListPlayerGame.Clear();
-            NbJ = Random.Range(2,5);
-            addToCurrentList(0);
-
         }
+        if (countNb == nbPlayed.Count)
+        {
+            for (int i = 0; i < nbPlayed.Count; i++)
+            {
+                nbPlayed[i] = 0;
+            }
+        }
+        ListPlayerGame.Clear();
+        //NbJ = nbPlayer;
+        NbJ = Random.Range(2, 5);
+        addToCurrentList(0);
     }
 
 
     public void addToCurrentList(int scoreP)
     {
-        Debug.Log("Jeu a " + NbJ + " Joueurs");
+        //Debug.Log("Jeu a " + NbJ + " Joueurs");
         //Ajout a la liste de transtion
         var index = 0;
         foreach (var item in nbPlayed)
@@ -63,6 +60,7 @@ public class AlgoPerso : MonoBehaviour
     public void selectPlayer(int nbPlayer)
     {
         //Check if nb player in current list >= nbPlayer
+
         if (transitionListPlayer.Count >= nbPlayer)
         {
             //Shuffle l'array
@@ -78,6 +76,7 @@ public class AlgoPerso : MonoBehaviour
         }
         else
         {
+
             transitionListPlayer = shuffleGOList(transitionListPlayer);
             for (int i = 0; i < transitionListPlayer.Count; i++)
             {
@@ -86,9 +85,17 @@ public class AlgoPerso : MonoBehaviour
 
             }
             transitionListPlayer.Clear();
+            var indexMachin = 0;
+            foreach (var item in nbPlayed)
+            {
+                if (item == 1)
+                {
+                    transitionListPlayer.Add(listPlayer[indexMachin].ToString());
+                }
+                indexMachin++;
+            }
 
             // if pas assez de joueur on va chercher les autres jouurs qui sont deja 1 
-            addToCurrentList(1);
             //On Shuffle quand même l'array
             transitionListPlayer = shuffleGOList(transitionListPlayer);
             for (int i = 0; i < nbPlayer - ListPlayerGame.Count; i++)
