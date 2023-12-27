@@ -1917,8 +1917,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 500, y: 300}
+  m_AnchoredPosition: {x: 0, y: 40}
+  m_SizeDelta: {x: 750, y: 240}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1047983969
 MonoBehaviour:
@@ -1940,7 +1940,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Contexte
+  m_text: "Dans le royaume viticole de F\xEAtevigne, la mort du Roi Soifafon d\xE9clenche
+    un tournoi sanglant o\xF9 les pr\xE9tendants, des nobles et chevaliers, rivalisent
+    pour le tr\xF4ne. Duels, strat\xE9gies et alliances se d\xE9ploient parmi les
+    vignobles pour d\xE9terminer le dernier survivant, couronn\xE9 souverain du royaume."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

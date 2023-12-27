@@ -2,56 +2,54 @@
     "player": [
         {
             "used": false,
-            "typeCarte": "duel",
+            "typeCarte": "Duel",
             "nbJoueur": 2,
             "texte": [
                 {
                     "used": false,
-                    "texteCarte": "je suis un gros prout",
+                    "texteCarte": "J1 et J2 vont devoir mimé une arme imaginaire, la pire mime perd 2 vies. (arme a la prochaine carte)",
                     "suite": [
+                        "Une Sarbacane à Confettis",
+                        "Une banane épée"                    
                     ],
                     "choix": [
-                        "duel1",
-                        "duel2"
+                        
                     ],
                     "suitechoix": [
-                        "suiteduel1",
-                        "suiteduel2"
+                        
                     ]
                 },
                 {
                     "used": false,
-                    "texteCarte": "je suis un gros caca",
+                    "texteCarte": "J1 et J2 font un bouclier, arc, massu (pierre, feuille, ciseau). Le perdant perd 2 vies",
                     "suite": [
                     ],
                     "choix": [
-                        "test1",
-                        "test2"
+                        
                     ],
                     "suitechoix": [
-                        "suitetest1",
-                        "suitetest2"
+                        
                     ]
                 }
             ]
         },
         {
             "used": false,
-            "typeCarte": "dilemme",
+            "typeCarte": "Dilemme",
             "nbJoueur": 2,
             "texte": [
                 {
                     "used": false,
                     "texteCarte": "J1 tu te bats contre J2 dans une maison abandonné , il y a un levier l'actionne tu ?",
                     "suite": [
-                        "zeub1",
-                        "zebi2"
+                        
                     ],
                     "choix": [
-
+                        "Oui",
+                        "Non"
                     ],
                     "suitechoix": [
-
+                        "Le levier ne sert a rien ton adversaire en profite pour te mettre un coup d'épée"
                     ]
                 },
                 {
@@ -67,20 +65,13 @@
                     "suitechoix": [
 
                     ]
-                }
-            ]
-        },
-        {
-            "used": false,
-            "typeCarte": "mfaible",
-            "nbJoueur": 3,
-            "texte": [
+                },
                 {
                     "used": false,
-                    "texteCarte": "c'est ciao",
+                    "texteCarte": "J1 et J2 trouvent une vieille relique mystérieuse dans un sanctuaire déserté. J1 doit décider s'il prend cette relique, malgré le risque de déclencher une malédiction ou d'attirer des ennuis.",
                     "suite": [
-                        "loseeer1",
-                        "loseeer2"
+                        "choix1",
+                        "choix2"
                     ],
                     "choix": [
 
@@ -91,10 +82,94 @@
                 },
                 {
                     "used": false,
-                    "texteCarte": "salut mon pote",
+                    "texteCarte": "J1 et J2 découvrent une porte secrète dans un château abandonné. J1 doit décider s'il l'ouvre, risquant de libérer quelque chose de dangereux ou de découvrir un trésor caché.",
                     "suite": [
-                        "caca1",
-                        "caca2"
+                        "choix1",
+                        "choix2"
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "J1 et J2 trouvent une épée ancienne plantée dans le sol. J1 doit décider s'il la retire, même si cela pourrait libérer un esprit ou déclencher une malédiction.",
+                    "suite": [
+                        "choix1",
+                        "choix2"
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "J1 et J2 tombent sur un manuscrit codé dans une bibliothèque abandonnée. J1 doit décider s'il tente de le déchiffrer, prenant le risque de libérer un savoir interdit ou de trouver une connaissance précieuse.",
+                    "suite": [
+                        "choix1",
+                        "choix2"
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "J1 et J2 découvrent une porte scellée dans une catacombe. J1 doit décider s'il tente de l'ouvrir, sans savoir ce qui se cache derrière : trésor, danger ou secret interdit.",
+                    "suite": [
+                        "choix1",
+                        "choix2"
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "J1 et J2 rencontrent un objet étrange dans une clairière isolée. J1 doit décider s'il interagit avec cet objet, prenant le risque de déclencher un événement surnaturel ou de découvrir un pouvoir magique.",
+                    "suite": [
+                        "choix1",
+                        "choix2"
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "J1 et J2 trouvent un mystérieux artefact dans un ancien temple. J1 doit décider s'il l'examine, risquant de libérer un esprit vengeur.",
+                    "suite": [
+                        "choix1",
+                        "choix2"
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "J1 et J2 découvrent un passage secret dans un vieux manoir. J1 doit décider s'il l'emprunte, sans savoir ce qui l'attend de l'autre côté : danger, trésor ou un piège mortel.",
+                    "suite": [
+                        "choix1",
+                        "choix2"
                     ],
                     "choix": [
 
@@ -107,15 +182,82 @@
         },
         {
             "used": false,
-            "typeCarte": "immunité",
+            "typeCarte": "Maillon faible",
+            "nbJoueur": 0,
+            "texte": [
+                {
+                    "used": false,
+                    "texteCarte": "J1 contre le peuple, vous allez devoir cité des mots appartenant au thème indiqué.",
+                    "suite": [
+                        "Une arme du moyen age. (Si J1 perd il perd 2 vies, sinon le peuple perd 1 vies chacun)",
+                        "Un pays d'Europe. (Si J1 perd il perd 2 vies, sinon le peuple perd 1 vies chacun)",
+                        "Un objet que l'on trouve dans une cuisine. (Si J1 perd il perd 2 vies, sinon le peuple perd 1 vies chacun)"
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "Dans ma valise, Le but est de prononcer 'Dans ma valise il y a...' et de compléter la suite, les autres joueur doivent la mémoriser et la répéter sans se tromper !, (le perdant perd 2 vies)",
+                    "suite": [
+                        
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                }
+            ]
+        },
+        {
+            "used": false,
+            "typeCarte": "Stratégie",
+            "nbJoueur": 0,
+            "texte": [
+                {
+                    "used": false,
+                    "texteCarte": "J1 et J2, vous tirez simultanément sur une cible, si vous êtes tous les deux concernés, vous perdez 4 vies chacun. Sinon, les cible perdent 1 vie. Si vous visez le même joueur, il perd 3 vies.",
+                    "suite": [
+                       
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "Chaque joueur tire 1 balle à tour de rôle. Lorsqu'un joueur est touché, il perd la capacité de tirer. J1 commence, le tour continue dans le sens horaire. Chaque balle tirée inflige une perte d'une vie.",
+                    "suite": [
+
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                }
+            ]
+        },
+        {
+            "used": false,
+            "typeCarte": "Immunité",
             "nbJoueur": 1,
             "texte": [
                 {
                     "used": false,
-                    "texteCarte": "J1 participe à un tournoi d'escrime et gagne une compétence améliorée qui lui permet d'esquiver plus efficacement les attaques adverses lors des duels.",
+                    "texteCarte": "J1 participe à un tournoi d'escrime et gagne une compétence améliorée qui lui permet d'esquiver plus efficacement les attaques adverses lors des duels. (immnunisé pour la prochaine carte)",
                     "suite": [
-                        "boubou1",
-                        "boubou2"
+
                     ],
                     "choix": [
 
@@ -126,10 +268,113 @@
                 },
                 {
                     "used": false,
-                    "texteCarte": "J2 remporte un bouclier magique après avoir résolu une énigme dans un temple ancien. Ce bouclier lui confère la capacité de repousser les attaques magiques.",
+                    "texteCarte": "J1 remporte un bouclier magique après avoir résolu une énigme dans un temple ancien. Ce bouclier lui confère la capacité de repousser les attaques magiques. (immnunisé pour la prochaine carte)",
                     "suite": [
-                        "bibi1",
-                        "bibi2"
+
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "J1 trouve une amulette protectrice dans les ruines d'un château abandonné. Cette amulette lui permet d'éviter les attaques surprises en détectant les menaces imminentes. (immnunisé pour la prochaine carte)",
+                    "suite": [
+
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "J1 réussit à capturer un cheval particulièrement agile lors d'une expédition. Ce cheval lui permet d'éviter plus facilement les embuscades et de fuir rapidement en cas de danger. (immnunisé pour la prochaine carte)",
+                    "suite": [
+
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "J1 apprend une technique de combat spéciale auprès d'un maître d'arts martiaux. Cette technique lui permet d'esquiver les attaques physiques avec une grande agilité. (immnunisé pour la prochaine carte)",
+                    "suite": [
+
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "J1 découvre une cape enchantée dans un trésor oublié. Cette cape lui confère l'aptitude à se fondre dans les ombres, lui permettant d'éviter les attaques furtives. (immnunisé pour la prochaine carte)",
+                    "suite": [
+
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "J1 reçoit un talisman de protection après avoir rendu service à un sorcier itinérant. Ce talisman lui offre une barrière magique lui permettant d'esquiver certains sorts maléfiques. (immnunisé pour la prochaine carte)",
+                    "suite": [
+
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "J1 acquiert un artefact antique qui lui donne la capacité de prédire les mouvements de ses ennemis. Cela lui permet d'éviter les attaques avec une plus grande précision. (immnunisé pour la prochaine carte)",
+                    "suite": [
+
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "J1 gagne l'amitié d'un faucon entraîné qui l'avertit des attaques imminentes. Grâce à cet allié, J1 peut anticiper les dangers et les esquiver habilement. (immnunisé pour la prochaine carte)",
+                    "suite": [
+
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "J1 hérite d'une armure spéciale en récompense pour avoir sauvé un village des pillards. Cette armure est légère et lui permet de se déplacer rapidement pour éviter les attaques ennemies. (immnunisé pour la prochaine carte)",
+                    "suite": [
+
                     ],
                     "choix": [
 
@@ -142,7 +387,7 @@
         },
         {
             "used": false,
-            "typeCarte": "victime",
+            "typeCarte": "Victime",
             "nbJoueur": 2,
             "texte": [
                 {
@@ -172,19 +417,172 @@
                     "suitechoix": [
 
                     ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "J1 et J2 se retrouvent coincés dans un puits profond. J1 peut décider de chercher de l'aide pour sortir J2 de là ou de tenter de le faire remonter lui-même.",
+                    "suite": [
+                        "sasa1",
+                        "sasa2"
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "J1 assiste à une attaque où J2 est pris au piège sous un cheval renversé. J1 doit choisir entre aider J2 à se libérer ou sauver sa propre vie.",
+                    "suite": [
+                        "sasa1",
+                        "sasa2"
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "J1 et J2 se retrouvent dans un marécage où J2 est en train de s'enfoncer. J1 peut tenter de trouver une branche ou une corde pour l'aider à se sortir de là, ou bien l'abandonner à son sort.",
+                    "suite": [
+                        "sasa1",
+                        "sasa2"
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "J1 et J2 se retrouvent dans une forêt infestée de prédateurs. J1 peut opter pour aider J2 à se défendre contre les bêtes sauvages ou s'enfuir pour sauver sa propre vie.",
+                    "suite": [
+                        "sasa1",
+                        "sasa2"
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "J1 découvre que J2 est pris au piège dans une geôle médiévale. J1 peut décider de risquer sa propre liberté pour aider J2 à s'évader ou l'abandonner à son destin.",
+                    "suite": [
+                        "sasa1",
+                        "sasa2"
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "J1 voit J2 se faire attaquer par des brigands et être désarmé. J1 peut choisir d'intervenir pour protéger J2 ou de se retirer pour sa propre sécurité.",
+                    "suite": [
+                        "sasa1",
+                        "sasa2"
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "J1 découvre que J2 est en train de se noyer dans une rivière tumultueuse. J1 doit choisir entre plonger pour le sauver ou chercher de l'aide.",
+                    "suite": [
+                        "sasa1",
+                        "sasa2"
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "J1 assiste à un duel où J2 est en train de perdre. J1 peut intervenir pour aider J2 à se défendre ou rester en retrait pour éviter tout conflit.",
+                    "suite": [
+                        "sasa1",
+                        "sasa2"
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "J1 trouve J2 gravement blessé sur un champ de bataille. J1 doit décider de consacrer du temps et des ressources pour soigner J2 ou de continuer son chemin.",
+                    "suite": [
+                        "sasa1",
+                        "sasa2"
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "J1 et J2 se retrouvent piégés dans un donjon en ruine. J1 doit décider s'il veut chercher une issue pour les deux ou s'échapper seul.",
+                    "suite": [
+                        "sasa1",
+                        "sasa2"
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
                 }
             ]
         },
         {
             "used": false,
-            "typeCarte": "checkpoint",
+            "typeCarte": "Checkpoint",
             "nbJoueur": 0,
             "texte": [
                 {
                     "used": false,
-                    "texteCarte": "petite pause",
+                    "texteCarte": "Tous le monde est au même niveau, J1 offre une tournée général",
                     "suite": [
-                        
+
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "J1 étant premier prend 4 gorgées, J2 étant deuxième prend 3 gorgées, J3 prend 2 gorgées et tous le reste 1 gorgées",
+                    "suite": [
+
                     ],
                     "choix": [
 
