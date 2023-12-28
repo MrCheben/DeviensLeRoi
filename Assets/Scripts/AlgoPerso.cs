@@ -10,13 +10,13 @@ public class AlgoPerso : MonoBehaviour
     public List<string> transitionListPlayer;
     public List<string> ListPlayerGame;
     public int NbJ=0;
+    public int playerDead;
 
     // Start is called before the first frame update
     void Start()
     {
-        
-    }
 
+    }
     public void TirerPlayer(int nbPlayer)
     {
         int countNb = 0;
@@ -115,14 +115,9 @@ public class AlgoPerso : MonoBehaviour
                 {
                     nbPlayed[listPlayer.FindIndex(a => a.Contains(ListPlayerGame[i].ToString()))] = 1;
                 }
-
-
             }
-
         }
-
     }
-
 
     private List<string> shuffleGOList(List<string> inputList)
     {    //take any list of GameObjects and return it with Fischer-Yates shuffle
@@ -144,6 +139,4 @@ public class AlgoPerso : MonoBehaviour
 
         return tempList;
     }
-
-
 }

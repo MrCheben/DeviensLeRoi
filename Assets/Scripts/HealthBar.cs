@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,6 +13,7 @@ public class HealthBar : MonoBehaviour
     public int indexListPlayer;
     public int maxVie = 10;
     public int lastVie = 10;
+    public int playerDead;
 
     public void Trigger(int nbVie)
     {
@@ -43,7 +45,29 @@ public class HealthBar : MonoBehaviour
         if(nbVie == 0)
         {
             GameObject.Find("MainGameplay").GetComponent<AlgoPerso>().nbPlayed[indexListPlayer] = -1;
-            //REMMETTRE A  SI JOEUR A + de 0 VIE
         }
+
+        if (GameObject.Find("MainGameplay").GetComponent<AlgoPerso>().nbPlayed[indexListPlayer] == -1 && nbVie > 0)
+        {
+            GameObject.Find("MainGameplay").GetComponent<AlgoPerso>().nbPlayed[indexListPlayer] = 0;
+            GameObject.Find("MainGameplay").GetComponent<GlobalSystem>().playerDead--;
+            GameObject.Find("CanvasVie").GetComponentInChildren<Button>().onClick.AddListener(() => GameObject.Find("MainGameplay").GetComponent<GlobalSystem>().changeCanvas("Game"));
+        }
+
+        if (GameObject.Find("MainGameplay").GetComponent<AlgoPerso>().nbPlayed[indexListPlayer] == -1)
+        {
+            GameObject.Find("MainGameplay").GetComponent<GlobalSystem>().playerDead++;
+            if (GameObject.Find("MainGameplay").GetComponent<GlobalSystem>().playerDead == GameObject.Find("MainGameplay").GetComponent<AlgoPerso>().listPlayer.Count - 1)
+            {
+                for (int i = 0; i < GameObject.Find("MainGameplay").GetComponent<AlgoPerso>().listPlayer.Count; i++)
+                {
+                    if(GameObject.Find("MainGameplay").GetComponent<AlgoPerso>().nbPlayed[i] != -1)
+                    {
+                        GameObject.Find("MainGameplay").GetComponent<GlobalSystem>().playerWinner = GameObject.Find("MainGameplay").GetComponent<AlgoPerso>().listPlayer[i];                      
+                        GameObject.Find("CanvasVie").GetComponentInChildren<Button>().onClick.AddListener(() => GameObject.Find("MainGameplay").GetComponent<GlobalSystem>().changeCanvas("End"));
+                    }                   
+                }                
+            }
+        }        
     }    
 }

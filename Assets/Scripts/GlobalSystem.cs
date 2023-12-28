@@ -18,6 +18,8 @@ public class GlobalSystem : MonoBehaviour
     public TMP_Text ErrorPlayerText;
     public GameObject PrefabHealthBar;
     public Text textGagnant;
+    public int playerDead;
+    public string playerWinner;
     Vector3 OffsetPrefabHealthBar = new Vector3(-600,510,0);    
 
     // Start is called before the first frame update
@@ -119,17 +121,12 @@ public class GlobalSystem : MonoBehaviour
             CanvasEnd.SetActive(true);
             CanvasContext.SetActive(false);
             CanvasVie.SetActive(false);
+            CanvasEnd.GetComponentInChildren<TMP_Text>().text = "Parmi les vignes silencieuses, seul " + playerWinner + " demeure, prêt à être couronné dernier roi de Fêtevigne. ";
         }
     }
 
-    public void DeathPlayer()
+    public void restartGame()
     {
-        foreach (var item in transform)
-        {
-            if (true)
-            {
-                
-            }
-        }
+        SceneManager.LoadScene("SampleScene");
     }
 }
