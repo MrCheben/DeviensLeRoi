@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AlgoPerso : MonoBehaviour
 {
-
+    AlgoCarte algoCarte;
     public List<string> listPlayer;
     public List<int> nbPlayed;
     public List<string> transitionListPlayer;
@@ -15,7 +15,7 @@ public class AlgoPerso : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        algoCarte = GetComponent<AlgoCarte>();
     }
     public void TirerPlayer(int nbPlayer)
     {
@@ -35,8 +35,8 @@ public class AlgoPerso : MonoBehaviour
             }
         }
         ListPlayerGame.Clear();
-        //NbJ = nbPlayer;
-        NbJ = Random.Range(2, 5);
+        NbJ = nbPlayer;
+        //NbJ = Random.Range(2, 5);
         addToCurrentList(0);
     }
 

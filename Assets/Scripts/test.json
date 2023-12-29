@@ -183,7 +183,7 @@
         {
             "used": false,
             "typeCarte": "Maillon faible",
-            "nbJoueur": 0,
+            "nbJoueur": 1,
             "texte": [
                 {
                     "used": false,
@@ -218,7 +218,7 @@
         {
             "used": false,
             "typeCarte": "Stratégie",
-            "nbJoueur": 0,
+            "nbJoueur": 2,
             "texte": [
                 {
                     "used": false,

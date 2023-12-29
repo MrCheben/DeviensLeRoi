@@ -6,6 +6,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using static SaveAndLoad;
+using System.Collections.Generic;
 
 public class AlgoCarte : MonoBehaviour   
 {
@@ -129,17 +130,21 @@ public class AlgoCarte : MonoBehaviour
     public void checkCarte()
     {
         
+
+
         int typeRange = Random.Range(0, players.player.Length - 1);
         int texteRange = Random.Range(0, players.player[typeRange].texte.Length);
         int suiteRange = Random.Range(0, players.player[typeRange].texte[texteRange].suite.Length);
         int choixRange = Random.Range(0, players.player[typeRange].texte[texteRange].suitechoix.Length);
+        int nbPlayer = players.player[typeRange].nbJoueur;
+
         if (tourCheckpoint < 3)
         {
             if (players.player[typeRange].used == true)
             {
                 Debug.Log("Carte "+ players.player[typeRange].typeCarte);
                 Debug.Log("Carte USED");
-                randomCarte();
+                randomCarte();                
             }
             else
             {
@@ -148,18 +153,54 @@ public class AlgoCarte : MonoBehaviour
                 if (players.player[typeRange].texte[texteRange].used == false)
                 {
                     Debug.Log("Carte NOT USED 2");
+                    Debug.Log(nbPlayer);
                     typeCarte.text = players.player[typeRange].typeCarte;
-                    GetComponent<AlgoPerso>().TirerPlayer(0);
-                    texteCarte.text = players.player[typeRange].texte[texteRange].texteCarte;
+                    GetComponent<AlgoPerso>().TirerPlayer(nbPlayer);
+
+                    List<string> listplayer = GetComponent<AlgoPerso>().ListPlayerGame;
+
+                    string txt = players.player[typeRange].texte[texteRange].texteCarte;
+
+                    if (nbPlayer > 0)
+                    {
+                        for (int i = 0; i < listplayer.Count; i++)
+                        {
+                            Debug.Log(listplayer[i]);
+                            Debug.Log(i);
+                            texteCarte.text = txt.Replace("J" + (i+1), listplayer[i]);
+                            txt = texteCarte.text;
+                        }
+                    }
+                    else
+                    {
+                        texteCarte.text = players.player[typeRange].texte[texteRange].texteCarte;
+                    }
+                    
                     Debug.Log(players.player[typeRange].texte[texteRange].texteCarte);
                     players.player[typeRange].used = true;
                     players.player[typeRange].texte[texteRange].used = true;
                     tourCheckpoint++;
                     if (players.player[typeRange].texte[texteRange].suite.Length > 0)
                     {
-                        suiteTexte = players.player[typeRange].texte[texteRange].suite[suiteRange];
-                        //DETRUIRE players.player[typeRange].texte[texteRange]
+                        string txtSuite = players.player[typeRange].texte[texteRange].suite[suiteRange];
 
+                        if (nbPlayer > 0)
+                        {
+                            for (int i = 0; i < listplayer.Count; i++)
+                            {
+                                Debug.Log(listplayer[i]);
+                                Debug.Log(i);
+                                suiteTexte = txtSuite.Replace("J" + (i + 1), listplayer[i]);
+                                txtSuite = suiteTexte;
+                            }
+                        }
+                        else
+                        {
+                            suiteTexte = players.player[typeRange].texte[texteRange].suite[suiteRange];
+                        }
+
+
+                        //DETRUIRE players.player[typeRange].texte[texteRange]
                     }
                     else if (players.player[typeRange].texte[texteRange].choix.Length > 0)
                     {
@@ -167,8 +208,25 @@ public class AlgoCarte : MonoBehaviour
                         btnChoix2.SetActive(true);
                         btnSuivant.SetActive(false);
                         textChoix1.text = players.player[typeRange].texte[texteRange].choix[0];
-                        textChoix2.text = players.player[typeRange].texte[texteRange].choix[1];
-                        suiteChoix = players.player[typeRange].texte[texteRange].suitechoix[choixRange];
+                        textChoix2.text = players.player[typeRange].texte[texteRange].choix[1];                        
+
+                        string txtChoix = players.player[typeRange].texte[texteRange].suitechoix[choixRange];
+
+                        if (nbPlayer > 0)
+                        {
+                            for (int i = 0; i < listplayer.Count; i++)
+                            {
+                                Debug.Log(listplayer[i]);
+                                Debug.Log(i);
+                                suiteChoix = txtChoix.Replace("J" + (i + 1), listplayer[i]);
+                                txtChoix = suiteChoix;
+                            }
+                        }
+                        else
+                        {
+                            suiteChoix = players.player[typeRange].texte[texteRange].suitechoix[choixRange];
+                        }
+
                         //DETRUIRE players.player[typeRange].texte[texteRange]
                     }
                     else
@@ -191,6 +249,6 @@ public class AlgoCarte : MonoBehaviour
             GetComponent<AlgoPerso>().TirerPlayer(0);
             texteCarte.text = players.player[^1].texte[0].texteCarte;
             tourCheckpoint = 0;
-        }
+        }  
     }
 }
