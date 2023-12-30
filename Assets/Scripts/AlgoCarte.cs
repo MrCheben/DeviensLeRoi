@@ -100,7 +100,7 @@ public class AlgoCarte : MonoBehaviour
 
         foreach (var item in players.player)
         {
-            if (item.typeCarte != "checkpoint")
+            if (item.typeCarte != "Dîme")
             {
                 if (item.used == true)
                 {
@@ -125,6 +125,29 @@ public class AlgoCarte : MonoBehaviour
                 }
             }
         }
+    }
+
+    public void checkIfAllUsed(int typeRange)
+    {
+        bool isAllUsed = true;
+
+        foreach (var item in players.player[typeRange].texte)
+        {
+            if (!item.used)
+            {
+                isAllUsed = false;
+            }
+        }
+
+        // Si toutes les cartes used alors on remet à false
+        if (isAllUsed)
+        {
+            foreach (var item in players.player[typeRange].texte)
+            {
+                item.used = false;
+            }
+        }
+
     }
 
     public void checkCarte()
@@ -179,6 +202,9 @@ public class AlgoCarte : MonoBehaviour
                     Debug.Log(players.player[typeRange].texte[texteRange].texteCarte);
                     players.player[typeRange].used = true;
                     players.player[typeRange].texte[texteRange].used = true;
+
+                    checkIfAllUsed(typeRange);
+
                     tourCheckpoint++;
                     if (players.player[typeRange].texte[texteRange].suite.Length > 0)
                     {
@@ -238,6 +264,7 @@ public class AlgoCarte : MonoBehaviour
                 }
                 else {
                     //Solution temporaire bug Aprés reset carte deja utilisé 
+                    
                     randomCarte();
                 }
             }
