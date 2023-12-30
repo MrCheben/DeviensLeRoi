@@ -10,7 +10,7 @@ using System.Collections.Generic;
 
 public class AlgoCarte : MonoBehaviour   
 {
-
+    public int NbCarteTirer;
     public TextAsset jsonData;
     public PlayerList players = new PlayerList();
     public GameObject btnChoix1;
@@ -68,6 +68,8 @@ public class AlgoCarte : MonoBehaviour
 
     public void tirageCarte()
     {
+        NbCarteTirer++;
+        Debug.Log("Nombre de carte tirer" + NbCarteTirer);
         Debug.Log("tirageCarte");
         if (!gameStarted)
         {
@@ -96,8 +98,6 @@ public class AlgoCarte : MonoBehaviour
 
     public void randomCarte()
     {
-
-
         foreach (var item in players.player)
         {
             if (item.typeCarte != "Dîme")
@@ -152,9 +152,6 @@ public class AlgoCarte : MonoBehaviour
 
     public void checkCarte()
     {
-        
-
-
         int typeRange = Random.Range(0, players.player.Length - 1);
         int texteRange = Random.Range(0, players.player[typeRange].texte.Length);
         int suiteRange = Random.Range(0, players.player[typeRange].texte[texteRange].suite.Length);

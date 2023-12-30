@@ -7,28 +7,250 @@
             "texte": [
                 {
                     "used": false,
-                    "texteCarte": "J1 et J2 vont devoir mimé une arme imaginaire, la pire mime perd 2 vies. (arme a la prochaine carte)",
+                    "texteCarte": "J1 et J2 vont devoir mimer une arme imaginaire, la pire mime perd 2 vies. (arme a la prochaine carte)",
                     "suite": [
                         "Une Sarbacane à Confettis",
-                        "Une banane épée"                    
+                        "Une banane épée"
                     ],
                     "choix": [
-                        
+
                     ],
                     "suitechoix": [
-                        
+
                     ]
                 },
                 {
                     "used": false,
                     "texteCarte": "J1 et J2 font un bouclier, arc, massu (pierre, feuille, ciseau). Le perdant perd 2 vies",
                     "suite": [
+
                     ],
                     "choix": [
-                        
+
                     ],
                     "suitechoix": [
-                        
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "J1 et J2 font un bouclier, arc, massu (pierre, feuille, ciseau). Le perdant perd 2 vies",
+                    "suite": [
+
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "J1 et J2 font un bouclier, arc, massu (pierre, feuille, ciseau). Le perdant perd 2 vies",
+                    "suite": [
+
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "J1 et J2 font un bouclier, arc, massu (pierre, feuille, ciseau). Le perdant perd 2 vies",
+                    "suite": [
+
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "J1 et J2 font un bouclier, arc, massu (pierre, feuille, ciseau). Le perdant perd 2 vies",
+                    "suite": [
+
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "J1 et J2 font un bouclier, arc, massu (pierre, feuille, ciseau). Le perdant perd 2 vies",
+                    "suite": [
+
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "J1 et J2 font un bouclier, arc, massu (pierre, feuille, ciseau). Le perdant perd 2 vies",
+                    "suite": [
+
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "J1 et J2 font un bouclier, arc, massu (pierre, feuille, ciseau). Le perdant perd 2 vies",
+                    "suite": [
+
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "J1 et J2 font un bouclier, arc, massu (pierre, feuille, ciseau). Le perdant perd 2 vies",
+                    "suite": [
+
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "J1 et J2 font un bouclier, arc, massu (pierre, feuille, ciseau). Le perdant perd 2 vies",
+                    "suite": [
+
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "J1 et J2 font un bouclier, arc, massu (pierre, feuille, ciseau). Le perdant perd 2 vies",
+                    "suite": [
+
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "J1 et J2 font un bouclier, arc, massu (pierre, feuille, ciseau). Le perdant perd 2 vies",
+                    "suite": [
+
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "J1 et J2 font un bouclier, arc, massu (pierre, feuille, ciseau). Le perdant perd 2 vies",
+                    "suite": [
+
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "J1 et J2 font un bouclier, arc, massu (pierre, feuille, ciseau). Le perdant perd 2 vies",
+                    "suite": [
+
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "J1 et J2 font un bouclier, arc, massu (pierre, feuille, ciseau). Le perdant perd 2 vies",
+                    "suite": [
+
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "J1 et J2 font un bouclier, arc, massu (pierre, feuille, ciseau). Le perdant perd 2 vies",
+                    "suite": [
+
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "J1 et J2 font un bouclier, arc, massu (pierre, feuille, ciseau). Le perdant perd 2 vies",
+                    "suite": [
+
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "J1 et J2 font un bouclier, arc, massu (pierre, feuille, ciseau). Le perdant perd 2 vies",
+                    "suite": [
+
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
                     ]
                 }
             ]
@@ -42,7 +264,7 @@
                     "used": false,
                     "texteCarte": "J1 tu te bats contre J2 dans une maison abandonné , il y a un levier l'actionne tu ?",
                     "suite": [
-                        
+
                     ],
                     "choix": [
                         "Oui",
@@ -177,6 +399,104 @@
                     "suitechoix": [
 
                     ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "J1 et J2 découvrent un passage secret dans un vieux manoir. J1 doit décider s'il l'emprunte, sans savoir ce qui l'attend de l'autre côté : danger, trésor ou un piège mortel.",
+                    "suite": [
+                        "choix1",
+                        "choix2"
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "J1 et J2 découvrent un passage secret dans un vieux manoir. J1 doit décider s'il l'emprunte, sans savoir ce qui l'attend de l'autre côté : danger, trésor ou un piège mortel.",
+                    "suite": [
+                        "choix1",
+                        "choix2"
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "J1 et J2 découvrent un passage secret dans un vieux manoir. J1 doit décider s'il l'emprunte, sans savoir ce qui l'attend de l'autre côté : danger, trésor ou un piège mortel.",
+                    "suite": [
+                        "choix1",
+                        "choix2"
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "J1 et J2 découvrent un passage secret dans un vieux manoir. J1 doit décider s'il l'emprunte, sans savoir ce qui l'attend de l'autre côté : danger, trésor ou un piège mortel.",
+                    "suite": [
+                        "choix1",
+                        "choix2"
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "J1 et J2 découvrent un passage secret dans un vieux manoir. J1 doit décider s'il l'emprunte, sans savoir ce qui l'attend de l'autre côté : danger, trésor ou un piège mortel.",
+                    "suite": [
+                        "choix1",
+                        "choix2"
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "J1 et J2 découvrent un passage secret dans un vieux manoir. J1 doit décider s'il l'emprunte, sans savoir ce qui l'attend de l'autre côté : danger, trésor ou un piège mortel.",
+                    "suite": [
+                        "choix1",
+                        "choix2"
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "J1 et J2 découvrent un passage secret dans un vieux manoir. J1 doit décider s'il l'emprunte, sans savoir ce qui l'attend de l'autre côté : danger, trésor ou un piège mortel.",
+                    "suite": [
+                        "choix1",
+                        "choix2"
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
                 }
             ]
         },
@@ -204,7 +524,267 @@
                     "used": false,
                     "texteCarte": "Dans ma valise, Le but est de prononcer 'Dans ma valise il y a...' et de compléter la suite, les autres joueur doivent la mémoriser et la répéter sans se tromper !, (le perdant perd 2 vies)",
                     "suite": [
-                        
+
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "Dans ma valise, Le but est de prononcer 'Dans ma valise il y a...' et de compléter la suite, les autres joueur doivent la mémoriser et la répéter sans se tromper !, (le perdant perd 2 vies)",
+                    "suite": [
+
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "Dans ma valise, Le but est de prononcer 'Dans ma valise il y a...' et de compléter la suite, les autres joueur doivent la mémoriser et la répéter sans se tromper !, (le perdant perd 2 vies)",
+                    "suite": [
+
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "Dans ma valise, Le but est de prononcer 'Dans ma valise il y a...' et de compléter la suite, les autres joueur doivent la mémoriser et la répéter sans se tromper !, (le perdant perd 2 vies)",
+                    "suite": [
+
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "Dans ma valise, Le but est de prononcer 'Dans ma valise il y a...' et de compléter la suite, les autres joueur doivent la mémoriser et la répéter sans se tromper !, (le perdant perd 2 vies)",
+                    "suite": [
+
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "Dans ma valise, Le but est de prononcer 'Dans ma valise il y a...' et de compléter la suite, les autres joueur doivent la mémoriser et la répéter sans se tromper !, (le perdant perd 2 vies)",
+                    "suite": [
+
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "Dans ma valise, Le but est de prononcer 'Dans ma valise il y a...' et de compléter la suite, les autres joueur doivent la mémoriser et la répéter sans se tromper !, (le perdant perd 2 vies)",
+                    "suite": [
+
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "Dans ma valise, Le but est de prononcer 'Dans ma valise il y a...' et de compléter la suite, les autres joueur doivent la mémoriser et la répéter sans se tromper !, (le perdant perd 2 vies)",
+                    "suite": [
+
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "Dans ma valise, Le but est de prononcer 'Dans ma valise il y a...' et de compléter la suite, les autres joueur doivent la mémoriser et la répéter sans se tromper !, (le perdant perd 2 vies)",
+                    "suite": [
+
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "Dans ma valise, Le but est de prononcer 'Dans ma valise il y a...' et de compléter la suite, les autres joueur doivent la mémoriser et la répéter sans se tromper !, (le perdant perd 2 vies)",
+                    "suite": [
+
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "Dans ma valise, Le but est de prononcer 'Dans ma valise il y a...' et de compléter la suite, les autres joueur doivent la mémoriser et la répéter sans se tromper !, (le perdant perd 2 vies)",
+                    "suite": [
+
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "Dans ma valise, Le but est de prononcer 'Dans ma valise il y a...' et de compléter la suite, les autres joueur doivent la mémoriser et la répéter sans se tromper !, (le perdant perd 2 vies)",
+                    "suite": [
+
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "Dans ma valise, Le but est de prononcer 'Dans ma valise il y a...' et de compléter la suite, les autres joueur doivent la mémoriser et la répéter sans se tromper !, (le perdant perd 2 vies)",
+                    "suite": [
+
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "Dans ma valise, Le but est de prononcer 'Dans ma valise il y a...' et de compléter la suite, les autres joueur doivent la mémoriser et la répéter sans se tromper !, (le perdant perd 2 vies)",
+                    "suite": [
+
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "Dans ma valise, Le but est de prononcer 'Dans ma valise il y a...' et de compléter la suite, les autres joueur doivent la mémoriser et la répéter sans se tromper !, (le perdant perd 2 vies)",
+                    "suite": [
+
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "Dans ma valise, Le but est de prononcer 'Dans ma valise il y a...' et de compléter la suite, les autres joueur doivent la mémoriser et la répéter sans se tromper !, (le perdant perd 2 vies)",
+                    "suite": [
+
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "Dans ma valise, Le but est de prononcer 'Dans ma valise il y a...' et de compléter la suite, les autres joueur doivent la mémoriser et la répéter sans se tromper !, (le perdant perd 2 vies)",
+                    "suite": [
+
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "Dans ma valise, Le but est de prononcer 'Dans ma valise il y a...' et de compléter la suite, les autres joueur doivent la mémoriser et la répéter sans se tromper !, (le perdant perd 2 vies)",
+                    "suite": [
+
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "Dans ma valise, Le but est de prononcer 'Dans ma valise il y a...' et de compléter la suite, les autres joueur doivent la mémoriser et la répéter sans se tromper !, (le perdant perd 2 vies)",
+                    "suite": [
+
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "Dans ma valise, Le but est de prononcer 'Dans ma valise il y a...' et de compléter la suite, les autres joueur doivent la mémoriser et la répéter sans se tromper !, (le perdant perd 2 vies)",
+                    "suite": [
+
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "Dans ma valise, Le but est de prononcer 'Dans ma valise il y a...' et de compléter la suite, les autres joueur doivent la mémoriser et la répéter sans se tromper !, (le perdant perd 2 vies)",
+                    "suite": [
+
                     ],
                     "choix": [
 
@@ -224,7 +804,267 @@
                     "used": false,
                     "texteCarte": "J1 et J2, vous tirez simultanément sur une cible, si vous êtes tous les deux concernés, vous perdez 4 vies chacun. Sinon, les cible perdent 1 vie. Si vous visez le même joueur, il perd 3 vies.",
                     "suite": [
-                       
+
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "Chaque joueur tire 1 balle à tour de rôle. Lorsqu'un joueur est touché, il perd la capacité de tirer. J1 commence, le tour continue dans le sens horaire. Chaque balle tirée inflige une perte d'une vie.",
+                    "suite": [
+
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "Chaque joueur tire 1 balle à tour de rôle. Lorsqu'un joueur est touché, il perd la capacité de tirer. J1 commence, le tour continue dans le sens horaire. Chaque balle tirée inflige une perte d'une vie.",
+                    "suite": [
+
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "Chaque joueur tire 1 balle à tour de rôle. Lorsqu'un joueur est touché, il perd la capacité de tirer. J1 commence, le tour continue dans le sens horaire. Chaque balle tirée inflige une perte d'une vie.",
+                    "suite": [
+
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "Chaque joueur tire 1 balle à tour de rôle. Lorsqu'un joueur est touché, il perd la capacité de tirer. J1 commence, le tour continue dans le sens horaire. Chaque balle tirée inflige une perte d'une vie.",
+                    "suite": [
+
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "Chaque joueur tire 1 balle à tour de rôle. Lorsqu'un joueur est touché, il perd la capacité de tirer. J1 commence, le tour continue dans le sens horaire. Chaque balle tirée inflige une perte d'une vie.",
+                    "suite": [
+
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "Chaque joueur tire 1 balle à tour de rôle. Lorsqu'un joueur est touché, il perd la capacité de tirer. J1 commence, le tour continue dans le sens horaire. Chaque balle tirée inflige une perte d'une vie.",
+                    "suite": [
+
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "Chaque joueur tire 1 balle à tour de rôle. Lorsqu'un joueur est touché, il perd la capacité de tirer. J1 commence, le tour continue dans le sens horaire. Chaque balle tirée inflige une perte d'une vie.",
+                    "suite": [
+
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "Chaque joueur tire 1 balle à tour de rôle. Lorsqu'un joueur est touché, il perd la capacité de tirer. J1 commence, le tour continue dans le sens horaire. Chaque balle tirée inflige une perte d'une vie.",
+                    "suite": [
+
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "Chaque joueur tire 1 balle à tour de rôle. Lorsqu'un joueur est touché, il perd la capacité de tirer. J1 commence, le tour continue dans le sens horaire. Chaque balle tirée inflige une perte d'une vie.",
+                    "suite": [
+
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "Chaque joueur tire 1 balle à tour de rôle. Lorsqu'un joueur est touché, il perd la capacité de tirer. J1 commence, le tour continue dans le sens horaire. Chaque balle tirée inflige une perte d'une vie.",
+                    "suite": [
+
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "Chaque joueur tire 1 balle à tour de rôle. Lorsqu'un joueur est touché, il perd la capacité de tirer. J1 commence, le tour continue dans le sens horaire. Chaque balle tirée inflige une perte d'une vie.",
+                    "suite": [
+
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "Chaque joueur tire 1 balle à tour de rôle. Lorsqu'un joueur est touché, il perd la capacité de tirer. J1 commence, le tour continue dans le sens horaire. Chaque balle tirée inflige une perte d'une vie.",
+                    "suite": [
+
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "Chaque joueur tire 1 balle à tour de rôle. Lorsqu'un joueur est touché, il perd la capacité de tirer. J1 commence, le tour continue dans le sens horaire. Chaque balle tirée inflige une perte d'une vie.",
+                    "suite": [
+
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "Chaque joueur tire 1 balle à tour de rôle. Lorsqu'un joueur est touché, il perd la capacité de tirer. J1 commence, le tour continue dans le sens horaire. Chaque balle tirée inflige une perte d'une vie.",
+                    "suite": [
+
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "Chaque joueur tire 1 balle à tour de rôle. Lorsqu'un joueur est touché, il perd la capacité de tirer. J1 commence, le tour continue dans le sens horaire. Chaque balle tirée inflige une perte d'une vie.",
+                    "suite": [
+
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "Chaque joueur tire 1 balle à tour de rôle. Lorsqu'un joueur est touché, il perd la capacité de tirer. J1 commence, le tour continue dans le sens horaire. Chaque balle tirée inflige une perte d'une vie.",
+                    "suite": [
+
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "Chaque joueur tire 1 balle à tour de rôle. Lorsqu'un joueur est touché, il perd la capacité de tirer. J1 commence, le tour continue dans le sens horaire. Chaque balle tirée inflige une perte d'une vie.",
+                    "suite": [
+
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "Chaque joueur tire 1 balle à tour de rôle. Lorsqu'un joueur est touché, il perd la capacité de tirer. J1 commence, le tour continue dans le sens horaire. Chaque balle tirée inflige une perte d'une vie.",
+                    "suite": [
+
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "Chaque joueur tire 1 balle à tour de rôle. Lorsqu'un joueur est touché, il perd la capacité de tirer. J1 commence, le tour continue dans le sens horaire. Chaque balle tirée inflige une perte d'une vie.",
+                    "suite": [
+
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "Chaque joueur tire 1 balle à tour de rôle. Lorsqu'un joueur est touché, il perd la capacité de tirer. J1 commence, le tour continue dans le sens horaire. Chaque balle tirée inflige une perte d'une vie.",
+                    "suite": [
+
                     ],
                     "choix": [
 
@@ -360,6 +1200,84 @@
                 {
                     "used": false,
                     "texteCarte": "J1 gagne l'amitié d'un faucon entraîné qui l'avertit des attaques imminentes. Grâce à cet allié, J1 peut anticiper les dangers et les esquiver habilement. (immnunisé pour la prochaine carte)",
+                    "suite": [
+
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "J1 hérite d'une armure spéciale en récompense pour avoir sauvé un village des pillards. Cette armure est légère et lui permet de se déplacer rapidement pour éviter les attaques ennemies. (immnunisé pour la prochaine carte)",
+                    "suite": [
+
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "J1 hérite d'une armure spéciale en récompense pour avoir sauvé un village des pillards. Cette armure est légère et lui permet de se déplacer rapidement pour éviter les attaques ennemies. (immnunisé pour la prochaine carte)",
+                    "suite": [
+
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "J1 hérite d'une armure spéciale en récompense pour avoir sauvé un village des pillards. Cette armure est légère et lui permet de se déplacer rapidement pour éviter les attaques ennemies. (immnunisé pour la prochaine carte)",
+                    "suite": [
+
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "J1 hérite d'une armure spéciale en récompense pour avoir sauvé un village des pillards. Cette armure est légère et lui permet de se déplacer rapidement pour éviter les attaques ennemies. (immnunisé pour la prochaine carte)",
+                    "suite": [
+
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "J1 hérite d'une armure spéciale en récompense pour avoir sauvé un village des pillards. Cette armure est légère et lui permet de se déplacer rapidement pour éviter les attaques ennemies. (immnunisé pour la prochaine carte)",
+                    "suite": [
+
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "J1 hérite d'une armure spéciale en récompense pour avoir sauvé un village des pillards. Cette armure est légère et lui permet de se déplacer rapidement pour éviter les attaques ennemies. (immnunisé pour la prochaine carte)",
                     "suite": [
 
                     ],
@@ -533,6 +1451,90 @@
                 {
                     "used": false,
                     "texteCarte": "J1 trouve J2 gravement blessé sur un champ de bataille. J1 doit décider de consacrer du temps et des ressources pour soigner J2 ou de continuer son chemin.",
+                    "suite": [
+                        "sasa1",
+                        "sasa2"
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "J1 et J2 se retrouvent piégés dans un donjon en ruine. J1 doit décider s'il veut chercher une issue pour les deux ou s'échapper seul.",
+                    "suite": [
+                        "sasa1",
+                        "sasa2"
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "J1 et J2 se retrouvent piégés dans un donjon en ruine. J1 doit décider s'il veut chercher une issue pour les deux ou s'échapper seul.",
+                    "suite": [
+                        "sasa1",
+                        "sasa2"
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "J1 et J2 se retrouvent piégés dans un donjon en ruine. J1 doit décider s'il veut chercher une issue pour les deux ou s'échapper seul.",
+                    "suite": [
+                        "sasa1",
+                        "sasa2"
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "J1 et J2 se retrouvent piégés dans un donjon en ruine. J1 doit décider s'il veut chercher une issue pour les deux ou s'échapper seul.",
+                    "suite": [
+                        "sasa1",
+                        "sasa2"
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "J1 et J2 se retrouvent piégés dans un donjon en ruine. J1 doit décider s'il veut chercher une issue pour les deux ou s'échapper seul.",
+                    "suite": [
+                        "sasa1",
+                        "sasa2"
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "J1 et J2 se retrouvent piégés dans un donjon en ruine. J1 doit décider s'il veut chercher une issue pour les deux ou s'échapper seul.",
                     "suite": [
                         "sasa1",
                         "sasa2"
