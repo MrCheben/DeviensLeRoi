@@ -47,7 +47,7 @@ J1 et J2 découvrent une créature légendaire endormie. J1 doit décider s'ils 
 J1 et J2 trouvent un ancien grimoire dans une bibliothèque secrète. J1 doit décider s'ils le consultent, risquant de déclencher une malédiction ou de gagner un pouvoir magique.
 
 J1 et J2 découvrent un mystérieux collier en perles dans une antre. J1 doit décider s'il le touche, risquant de subir un sort ou de recevoir une protection.
-
+//
 J1 et J2 rencontrent un vieux sage qui propose une énigme en échange de connaissances. J1 doit décider s'il répond, risquant de perdre ou de gagner des informations précieuses.
 
 J1 et J2 découvrent un miroir ancien dans une pièce abandonnée. J1 doit décider s'ils l'utilisent, risquant d'être piégés ou de découvrir des vérités cachées.
