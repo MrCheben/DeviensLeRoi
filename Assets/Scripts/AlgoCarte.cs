@@ -1,4 +1,4 @@
-using JetBrains.Annotations;
+ï»¿using JetBrains.Annotations;
 using System.Collections;
 using System.Linq;
 using Unity.VisualScripting;
@@ -100,7 +100,7 @@ public class AlgoCarte : MonoBehaviour
     {
         foreach (var item in players.player)
         {
-            if (item.typeCarte != "Dîme")
+            if (item.typeCarte != "DÃ®me")
             {
                 if (item.used == true)
                 {
@@ -140,7 +140,7 @@ public class AlgoCarte : MonoBehaviour
             }
         }
 
-        // Si toutes les cartes used alors on remet à false
+        // Si toutes les cartes used alors on remet ï¿½ false
         if (isAllUsed)
         {
             foreach (var item in players.player[typeRange].texte)
@@ -150,6 +150,7 @@ public class AlgoCarte : MonoBehaviour
         }
 
     }
+
 
     public void checkCarte()
     {
@@ -200,10 +201,8 @@ public class AlgoCarte : MonoBehaviour
                     Debug.Log(players.player[typeRange].texte[texteRange].texteCarte);
                     players.player[typeRange].used = true;
                     players.player[typeRange].texte[texteRange].used = true;
-
-                    checkIfAllUsed(typeRange);
-
                     tourCheckpoint++;
+                    checkIfAllUsed(typeRange);
                     if (players.player[typeRange].texte[texteRange].suite.Length > 0)
                     {
                         string txtSuite = players.player[typeRange].texte[texteRange].suite[suiteRange];
@@ -261,15 +260,14 @@ public class AlgoCarte : MonoBehaviour
 
                 }
                 else {
-                    //Solution temporaire bug Aprés reset carte deja utilisé 
-                    
+                    //Solution temporaire bug AprÃ©s reset carte deja utilisÃ© 
                     randomCarte();
                 }
             }
         }
         else
         {
-            Debug.Log("tourCheckpoint");
+            Debug.Log("DÃ®me");
             typeCarte.text = players.player[^1].typeCarte;
             GetComponent<AlgoPerso>().TirerPlayer(0);
             texteCarte.text = players.player[^1].texte[0].texteCarte;
