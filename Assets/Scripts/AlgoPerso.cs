@@ -11,7 +11,7 @@ public class AlgoPerso : MonoBehaviour
     public List<string> ListPlayerGame;
     public int NbJ=0;
     public int playerDead;
-
+    private int countPlayer;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +19,7 @@ public class AlgoPerso : MonoBehaviour
     }
     public void TirerPlayer(int nbPlayer)
     {
+        refreshPlayer();
         int countNb = 0;
         foreach (var item in nbPlayed)
         {
@@ -76,7 +77,6 @@ public class AlgoPerso : MonoBehaviour
         }
         else
         {
-
             transitionListPlayer = shuffleGOList(transitionListPlayer);
             for (int i = 0; i < transitionListPlayer.Count; i++)
             {
@@ -107,16 +107,38 @@ public class AlgoPerso : MonoBehaviour
             //Reset nbPlayed 0 to 1 & 1 to 0
             for (int i = 0; i < ListPlayerGame.Count; i++)
             {
-                if (nbPlayed[listPlayer.FindIndex(a => a.Contains(ListPlayerGame[i].ToString()))] == 1)
-                {
-                    nbPlayed[listPlayer.FindIndex(a => a.Contains(ListPlayerGame[i].ToString()))] = 0;
-                }
-                else
+                if (nbPlayed[listPlayer.FindIndex(a => a.Contains(ListPlayerGame[i].ToString()))] == 0)
                 {
                     nbPlayed[listPlayer.FindIndex(a => a.Contains(ListPlayerGame[i].ToString()))] = 1;
                 }
             }
         }
+    }
+
+
+    private void refreshPlayer()
+    {
+
+        for (int i = 0; i < nbPlayed.Count; i++)
+        {
+            if (nbPlayed[i] == 1 || nbPlayed[i] == -1)
+            {
+                countPlayer++;
+            }
+        }
+        if (nbPlayed.Count== countPlayer)
+        {
+            for (int i = 0; i < nbPlayed.Count; i++)
+            {
+                if (nbPlayed[i] == 1)
+                {
+                    nbPlayed[i] = 0;
+                }
+            }
+            
+        }
+        countPlayer = 0;
+
     }
 
     private List<string> shuffleGOList(List<string> inputList)
