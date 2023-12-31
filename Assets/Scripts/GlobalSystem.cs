@@ -20,7 +20,8 @@ public class GlobalSystem : MonoBehaviour
     public Text textGagnant;
     public int playerDead;
     public string playerWinner;
-    Vector3 OffsetPrefabHealthBar = new Vector3(-600,510,0);    
+    Vector3 OffsetPrefabHealthBar = new Vector3(-600,510,0);
+    public List<Text> listHealthBar;
 
     // Start is called before the first frame update
     void Start()
@@ -49,7 +50,9 @@ public class GlobalSystem : MonoBehaviour
         {
 
             GameObject HealthBar = Instantiate(PrefabHealthBar);
-            HealthBar.GetComponentInChildren<HealthBar>().indexListPlayer = i;
+            HealthBar healtbarScript = HealthBar.GetComponentInChildren<HealthBar>();
+            healtbarScript.indexListPlayer = i;
+            listHealthBar.Add(healtbarScript.texte);
             HealthBar.transform.SetParent(CanvasVie.transform, false);
             HealthBar.transform.position= CanvasVie.transform.position + OffsetPrefabHealthBar;
             HealthBar.GetComponent<Text>().text = algoPerso.listPlayer[i];

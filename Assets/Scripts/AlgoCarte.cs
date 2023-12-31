@@ -69,8 +69,6 @@ public class AlgoCarte : MonoBehaviour
     public void tirageCarte()
     {
         NbCarteTirer++;
-        Debug.Log("Nombre de carte tirer" + NbCarteTirer);
-        Debug.Log("tirageCarte");
         if (!gameStarted)
         {
             gameStarted = true;
@@ -107,11 +105,9 @@ public class AlgoCarte : MonoBehaviour
                     typeUse++;
                     if (typeUse == players.player.Length - 1)
                     {
-                        Debug.Log("Reset");
                         for (int i = 0; i < players.player.Length - 1; i++)
                         {
                             players.player[i].used = false;
-                            Debug.Log(players.player[i].typeCarte);
                         }
                         checkCarte();
                         break;
@@ -127,7 +123,7 @@ public class AlgoCarte : MonoBehaviour
         }
     }
 
-    // Fonction test si toutes les cartes sont utilisées
+    // Fonction test si toutes les cartes sont utilisï¿½es
     public void checkIfAllUsed(int typeRange)
     {
         bool isAllUsed = true;
@@ -164,18 +160,14 @@ public class AlgoCarte : MonoBehaviour
         {
             if (players.player[typeRange].used == true)
             {
-                Debug.Log("Carte "+ players.player[typeRange].typeCarte);
-                Debug.Log("Carte USED");
+
                 randomCarte();                
             }
             else
             {
-                Debug.Log("Carte " + players.player[typeRange].typeCarte);
-                Debug.Log("Carte NOT USED");
+
                 if (players.player[typeRange].texte[texteRange].used == false)
                 {
-                    Debug.Log("Carte NOT USED 2");
-                    Debug.Log(nbPlayer);
                     typeCarte.text = players.player[typeRange].typeCarte;
                     GetComponent<AlgoPerso>().TirerPlayer(nbPlayer);
 
@@ -187,8 +179,6 @@ public class AlgoCarte : MonoBehaviour
                     {
                         for (int i = 0; i < listplayer.Count; i++)
                         {
-                            Debug.Log(listplayer[i]);
-                            Debug.Log(i);
                             texteCarte.text = txt.Replace("J" + (i+1), listplayer[i]);
                             txt = texteCarte.text;
                         }
@@ -198,7 +188,6 @@ public class AlgoCarte : MonoBehaviour
                         texteCarte.text = players.player[typeRange].texte[texteRange].texteCarte;
                     }
                     
-                    Debug.Log(players.player[typeRange].texte[texteRange].texteCarte);
                     players.player[typeRange].used = true;
                     players.player[typeRange].texte[texteRange].used = true;
                     tourCheckpoint++;
@@ -211,8 +200,6 @@ public class AlgoCarte : MonoBehaviour
                         {
                             for (int i = 0; i < listplayer.Count; i++)
                             {
-                                Debug.Log(listplayer[i]);
-                                Debug.Log(i);
                                 suiteTexte = txtSuite.Replace("J" + (i + 1), listplayer[i]);
                                 txtSuite = suiteTexte;
                             }
@@ -239,8 +226,6 @@ public class AlgoCarte : MonoBehaviour
                         {
                             for (int i = 0; i < listplayer.Count; i++)
                             {
-                                Debug.Log(listplayer[i]);
-                                Debug.Log(i);
                                 suiteChoix = txtChoix.Replace("J" + (i + 1), listplayer[i]);
                                 txtChoix = suiteChoix;
                             }
@@ -267,9 +252,15 @@ public class AlgoCarte : MonoBehaviour
         }
         else
         {
-            Debug.Log("DÃ®me");
             typeCarte.text = players.player[^1].typeCarte;
             GetComponent<AlgoPerso>().TirerPlayer(0);
+            //Function 
+            //
+            foreach (var item in GetComponent<GlobalSystem>().listHealthBar)
+            {
+                Debug.Log(item.text);
+            }
+
             texteCarte.text = players.player[^1].texte[0].texteCarte;
             tourCheckpoint = 0;
         }  
