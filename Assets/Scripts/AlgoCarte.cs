@@ -127,7 +127,7 @@ public class AlgoCarte : MonoBehaviour
         }
     }
 
-    // Fonction test si toutes les cartes sont utilisées
+    // Fonction test si toutes les cartes sont utilisï¿½es
     public void checkIfAllUsed(int typeRange)
     {
         bool isAllUsed = true;
