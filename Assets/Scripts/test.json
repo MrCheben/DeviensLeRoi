@@ -31,6 +31,45 @@
                     "suitechoix": [
 
                     ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "J1 et J2 exécutent une danse médiévale. Les autres joueurs, tels des invités à un bal royal, choisissent le danseur le plus gracieux , l'autre perd 1 vie'",
+                    "suite": [
+
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "J1 et J2 participent à un concours de lancer d'objets sur une cible de leur choix. Le moins adroit perd 2 vies.",
+                    "suite": [
+
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
+                },
+                {
+                    "used": false,
+                    "texteCarte": "J1 et J2 doivent dessiner le portrait de l'autre en style médiéval. Les spectateurs, tels des mécènes d'antan, jugeront l'œuvre la plus digne,  l'autre perd 2 vie",
+                    "suite": [
+
+                    ],
+                    "choix": [
+
+                    ],
+                    "suitechoix": [
+
+                    ]
                 }
             ]
         },
@@ -452,11 +491,9 @@
                 },
                 {
                     "used": false,
-                    "texteCarte": "J1 doit mimer ... (mime a la prochaine carte)",
+                    "texteCarte": "J1 doit mimer un mot donné par J2 le reste du peuple doit trouver en moins de 20 secondes. -1 vie si le mime n'est pas trouvé'",
                     "suite": [
-                        "Une grue (Le gagnant cible une personne qui perd une vie)",
-                        "Une chaise (Le gagnant cible une personne qui perd une vie)",
-                        "Pass-Partout (Le gagnant cible une personne qui perd une vie)"
+
                     ],
                     "choix": [
 
@@ -500,7 +537,7 @@
                 },
                 {
                     "used": false,
-                    "texteCarte": "Chaque joueur tire 1 balle à tour de rôle. Lorsqu'un joueur est touché, il perd la capacité de tirer. J1 commence, le tour continue dans le sens horaire. Chaque balle tirée inflige une perte d'une vie.",
+                    "texteCarte": "Chaque joueur tire 1 flèche à tour de rôle. Lorsqu'un joueur est touché, il perd la capacité de tirer. J1 commence, le tour continue dans le sens horaire. Chaque flèche tirée inflige une perte d'une vie.",
                     "suite": [
 
                     ],
