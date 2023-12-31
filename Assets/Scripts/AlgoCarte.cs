@@ -252,16 +252,45 @@ public class AlgoCarte : MonoBehaviour
         }
         else
         {
+            int countJ=1;
+            string storeHealtJ="";
             typeCarte.text = players.player[^1].typeCarte;
             GetComponent<AlgoPerso>().TirerPlayer(0);
             //Function 
             //
             foreach (var item in GetComponent<GlobalSystem>().listHealthBar)
             {
-                Debug.Log(item.text);
+                if (item.text != "0")
+                {
+                    
+                    if (storeHealtJ != "")
+                    {
+                        if(storeHealtJ == item.text)
+                        {
+                            countJ++;
+                        }
+                    }
+                    else
+                    {
+                        storeHealtJ = item.text;
+                    }
+                }
+                else
+                {
+                    countJ++;
+                }
+                
+            }
+            if (countJ== GetComponent<GlobalSystem>().listHealthBar.Count)
+            {
+                texteCarte.text = players.player[^1].texte[0].texteCarte;
+            }
+            else
+            {
+                texteCarte.text = players.player[^1].texte[1].texteCarte;
             }
 
-            texteCarte.text = players.player[^1].texte[0].texteCarte;
+            
             tourCheckpoint = 0;
         }  
     }
